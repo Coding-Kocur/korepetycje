@@ -565,11 +565,221 @@
                 justify-content: center;
             }
         }
+
+        /* ===== ANIMATIONS ===== */
+
+        /* Scroll Reveal */
+        .reveal-hidden {
+            opacity: 0 !important;
+            transform: translateY(30px) !important;
+            transition: opacity 0.8s ease, transform 0.8s ease !important;
+            animation: none !important;
+        }
+
+        .reveal-hidden.reveal-visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* Pulsing CTA */
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+            }
+
+            50% {
+                box-shadow: 0 4px 40px rgba(37, 99, 235, 0.6), 0 0 80px rgba(6, 182, 212, 0.15);
+            }
+        }
+
+        .cta-button {
+            animation: pulse-glow 2.5s ease-in-out infinite;
+        }
+
+        /* Shimmer on cert/score tags */
+        @keyframes shimmer {
+            0% {
+                background-position: 200% center;
+            }
+
+            100% {
+                background-position: -200% center;
+            }
+        }
+
+        .cert-tag {
+            background: linear-gradient(90deg, rgba(16, 185, 129, 0.12) 25%, rgba(16, 185, 129, 0.3) 50%, rgba(16, 185, 129, 0.12) 75%) !important;
+            background-size: 200% 100% !important;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .score-tag {
+            background: linear-gradient(90deg, rgba(37, 99, 235, 0.12) 25%, rgba(37, 99, 235, 0.3) 50%, rgba(37, 99, 235, 0.12) 75%) !important;
+            background-size: 200% 100% !important;
+            animation: shimmer 3.5s ease-in-out infinite;
+        }
+
+        /* Floating orbs */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.7;
+        }
+
+        .orb-1 {
+            width: 400px;
+            height: 400px;
+            background: rgba(37, 99, 235, 0.12);
+            top: 10%;
+            left: -5%;
+            animation: float1 20s ease-in-out infinite;
+        }
+
+        .orb-2 {
+            width: 300px;
+            height: 300px;
+            background: rgba(6, 182, 212, 0.1);
+            bottom: 10%;
+            right: -5%;
+            animation: float2 25s ease-in-out infinite;
+        }
+
+        .orb-3 {
+            width: 250px;
+            height: 250px;
+            background: rgba(139, 92, 246, 0.08);
+            top: 50%;
+            left: 40%;
+            animation: float3 18s ease-in-out infinite;
+        }
+
+        @keyframes float1 {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            33% {
+                transform: translate(60px, 40px);
+            }
+
+            66% {
+                transform: translate(-30px, 80px);
+            }
+        }
+
+        @keyframes float2 {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            33% {
+                transform: translate(-50px, -30px);
+            }
+
+            66% {
+                transform: translate(40px, -60px);
+            }
+        }
+
+        @keyframes float3 {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(70px, -50px);
+            }
+        }
+
+        /* Staggered help list */
+        .help-list.stagger-hidden li {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .help-list.stagger-hidden.stagger-visible li {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .help-list.stagger-hidden.stagger-visible li:nth-child(1) {
+            transition-delay: 0s;
+        }
+
+        .help-list.stagger-hidden.stagger-visible li:nth-child(2) {
+            transition-delay: 0.1s;
+        }
+
+        .help-list.stagger-hidden.stagger-visible li:nth-child(3) {
+            transition-delay: 0.15s;
+        }
+
+        .help-list.stagger-hidden.stagger-visible li:nth-child(4) {
+            transition-delay: 0.2s;
+        }
+
+        .help-list.stagger-hidden.stagger-visible li:nth-child(5) {
+            transition-delay: 0.25s;
+        }
+
+        /* Typing cursor */
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            background: var(--primary-light);
+            margin-left: 2px;
+            animation: blink-cursor 0.7s step-end infinite;
+            vertical-align: text-bottom;
+        }
+
+        @keyframes blink-cursor {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Contact info */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--primary-light);
+        }
     </style>
 </head>
 
 <body>
     <div class="bg-pattern"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
     <div class="container">
         <!-- Header -->
@@ -688,13 +898,102 @@
         <section class="section cta-section">
             <h3>Zapraszam do współpracy! 🤝</h3>
             <p>Napisz lub zadzwoń – chętnie odpowiem na pytania i umówię się na pierwszą lekcję.</p>
-            <a href="#" class="cta-button">📩 Skontaktuj się ze mną</a>
+            <div class="contact-info">
+                <a href="tel:+48881013047" class="contact-item">📞 +48 881 013 047</a>
+                <a href="mailto:stanislaw.kotowicz2005@gmail.com" class="contact-item">✉️
+                    stanislaw.kotowicz2005@gmail.com</a>
+            </div>
+            <a href="mailto:stanislaw.kotowicz2005@gmail.com" class="cta-button">📩 Skontaktuj się ze mną</a>
         </section>
 
         <footer class="footer">
             <p>© 2026 Stanisław Kotowicz – Korepetycje z Matematyki i Angielskiego</p>
         </footer>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // === 1. Typing Effect ===
+            const h1 = document.querySelector('.header h1');
+            if (h1) {
+                const fullText = h1.textContent;
+                h1.style.animation = 'none';
+                h1.style.opacity = '1';
+                h1.textContent = '';
+                const cursor = document.createElement('span');
+                cursor.className = 'typing-cursor';
+                cursor.innerHTML = '&nbsp;';
+                h1.appendChild(cursor);
+                let i = 0;
+                function typeChar() {
+                    if (i < fullText.length) {
+                        h1.insertBefore(document.createTextNode(fullText[i]), cursor);
+                        i++;
+                        setTimeout(typeChar, 70);
+                    } else {
+                        setTimeout(() => { cursor.style.display = 'none'; }, 2000);
+                    }
+                }
+                setTimeout(typeChar, 400);
+            }
+
+            // === 2. Scroll Reveal ===
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(s => s.classList.add('reveal-hidden'));
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            sections.forEach(s => revealObserver.observe(s));
+
+            // === 3. Staggered Help List ===
+            const helpList = document.querySelector('.help-list');
+            if (helpList) {
+                helpList.classList.add('stagger-hidden');
+                const listObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('stagger-visible');
+                            listObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                listObserver.observe(helpList);
+            }
+
+            // === 4. Counter Animation ===
+            const amountEl = document.querySelector('.price-info .amount');
+            if (amountEl) {
+                const targetNum = 80;
+                amountEl.innerHTML = '0 <span>PLN</span>';
+                let counted = false;
+                const counterObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && !counted) {
+                            counted = true;
+                            let current = 0;
+                            const duration = 1200;
+                            const steps = 40;
+                            const increment = targetNum / steps;
+                            const interval = setInterval(() => {
+                                current += increment;
+                                if (current >= targetNum) {
+                                    current = targetNum;
+                                    clearInterval(interval);
+                                }
+                                amountEl.innerHTML = Math.round(current) + ' <span>PLN</span>';
+                            }, duration / steps);
+                            counterObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                counterObserver.observe(amountEl);
+            }
+        });
+    </script>
 </body>
 
 </html>
