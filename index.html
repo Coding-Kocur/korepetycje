@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korepetycje z Matematyki i Angielskiego – Stanisław Kotowicz</title>
+    <meta name="description"
+        content="Korepetycje z matematyki i angielskiego w Konstantynowie Łódzkim i Łodzi. Przygotowanie do matury i egzaminu ósmoklasisty. Certyfikat C1 Cambridge.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --primary-light: #3b82f6;
+            --accent: #06b6d4;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #253349;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: #334155;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --gradient-1: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+            --gradient-2: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.3);
+            --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 10%, rgba(37, 99, 235, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 50% at 80% 90%, rgba(6, 182, 212, 0.06) 0%, transparent 60%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(37, 99, 235, 0.15);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            color: var(--primary-light);
+            padding: 0.4rem 1.2rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            animation: fadeInDown 0.6s ease-out;
+        }
+
+        .badge::before {
+            content: '📚';
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            animation: fadeInDown 0.6s ease-out 0.1s both;
+        }
+
+        .header .subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            animation: fadeInDown 0.6s ease-out 0.2s both;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1.25rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-lg);
+            animation: fadeInUp 0.7s ease-out 0.3s both;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            border-color: rgba(37, 99, 235, 0.4);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+            width: 160px;
+            height: 200px;
+            border-radius: 1rem;
+            overflow: hidden;
+            border: 2px solid var(--border);
+            position: relative;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 15%;
+            transform: scale(1.3);
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover .profile-photo img {
+            transform: scale(1.4);
+        }
+
+        .profile-info h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+
+        .profile-info .role {
+            color: var(--accent);
+            font-weight: 500;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-info p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Certificates */
+        .cert-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .cert-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: var(--success);
+            padding: 0.3rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .cert-tag::before {
+            content: '✓';
+            font-weight: 800;
+        }
+
+        /* Sections */
+        .section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 1.25rem;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-lg);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: var(--shadow-lg), 0 0 30px rgba(37, 99, 235, 0.08);
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .section-title .icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-1);
+            border-radius: 0.6rem;
+            font-size: 1.1rem;
+        }
+
+        /* Offer Grid */
+        .offer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .offer-item {
+            background: rgba(37, 99, 235, 0.06);
+            border: 1px solid rgba(37, 99, 235, 0.15);
+            border-radius: 0.9rem;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .offer-item:hover {
+            background: rgba(37, 99, 235, 0.1);
+            border-color: rgba(37, 99, 235, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .offer-item .emoji {
+            font-size: 1.8rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .offer-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .offer-item p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Help List */
+        .help-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .help-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.7rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 0.7rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            transition: background 0.2s ease;
+        }
+
+        .help-list li:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .help-list li .check {
+            color: var(--success);
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Price Card */
+        .price-section {
+            animation: fadeInUp 0.7s ease-out 0.6s both;
+        }
+
+        .price-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--gradient-1);
+            border-radius: 1rem;
+            padding: 1.75rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+        }
+
+        .price-card::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: 10%;
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+        }
+
+        .price-info {
+            position: relative;
+            z-index: 1;
+        }
+
+        .price-info .label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            opacity: 0.85;
+            margin-bottom: 0.25rem;
+        }
+
+        .price-info .amount {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .price-info .amount span {
+            font-size: 1.3rem;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        .price-info .note {
+            font-size: 0.82rem;
+            opacity: 0.7;
+            margin-top: 0.3rem;
+        }
+
+        .price-badge {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            text-align: center;
+        }
+
+        .price-badge .clock {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .price-badge p {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Location */
+        .location-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .location-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+            padding: 0.45rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* CTA */
+        .cta-section {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            animation: fadeInUp 0.7s ease-out 0.8s both;
+        }
+
+        .cta-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-section p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: var(--gradient-1);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 100px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.5);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        /* Score tags */
+        .score-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(37, 99, 235, 0.12);
+            border: 1px solid rgba(37, 99, 235, 0.25);
+            color: var(--primary-light);
+            padding: 0.3rem 0.75rem;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .score-tag::before {
+            content: '📊';
+        }
+
+        /* UK flag in offer */
+        .flag-icon {
+            width: 44px;
+            height: 30px;
+            margin-bottom: 0.4rem;
+        }
+
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .container {
+                padding: 1.25rem 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+                padding: 1.5rem;
+            }
+
+            .profile-photo {
+                width: 130px;
+                height: 170px;
+            }
+
+            .cert-tags {
+                justify-content: center;
+            }
+
+            .offer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .price-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.25rem;
+                padding: 1.5rem;
+            }
+
+            .price-info .amount {
+                font-size: 2rem;
+            }
+
+            .location-tags {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-pattern"></div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="badge">Korepetycje</div>
+            <h1>Matematyka & Angielski</h1>
+            <p class="subtitle">Indywidualne korepetycje dostosowane do Twoich potrzeb</p>
+        </header>
+
+        <!-- Profile -->
+        <div class="profile-card">
+            <div class="profile-photo">
+                <img src="photo.png" alt="Stanisław Kotowicz – korepetytor matematyki i angielskiego">
+            </div>
+            <div class="profile-info">
+                <h2>Stanisław Kotowicz</h2>
+                <p class="role">🎓 Student 2. roku PŁ – Business, Society and Technology (Inżynieria produkcji, kierunek
+                    anglojęzyczny)</p>
+                <p>Przedmioty ścisłe zawsze były moją mocną stroną, dlatego z przyjemnością pomagam innym w ich
+                    zrozumieniu. Oferuję korepetycje, podczas których stawiam na cierpliwość, jasne tłumaczenie
+                    materiału i przyjazną atmosferę.</p>
+                <div class="cert-tags">
+                    <span class="cert-tag">C1 Cambridge Advanced (CAE)</span>
+                    <span class="cert-tag">C1 ACERT</span>
+                    <span class="score-tag">Matura mat. podst. 98%</span>
+                    <span class="score-tag">Matura mat. rozsz. 72%</span>
+                    <span class="score-tag">Matura ang. dwujęz. 88%</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Offer -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">🎯</span>
+                Oferta
+            </h2>
+            <div class="offer-grid">
+                <div class="offer-item">
+                    <div class="emoji">📐</div>
+                    <h3>Matematyka</h3>
+                    <p>Algebra, geometria, analiza, statystyka – od podstaw po poziom rozszerzony</p>
+                </div>
+                <div class="offer-item">
+                    <svg class="flag-icon" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                        <clipPath id="s">
+                            <path d="M0,0 v30 h60 v-30 z" />
+                        </clipPath>
+                        <clipPath id="t">
+                            <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
+                        </clipPath>
+                        <g clip-path="url(#s)">
+                            <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+                            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+                            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4" />
+                            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+                            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+                        </g>
+                    </svg>
+                    <h3>Język angielski</h3>
+                    <p>Gramatyka, konwersacje, przygotowanie do egzaminów – od A2 do C1</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">✅</span>
+                W czym mogę pomóc?
+            </h2>
+            <ul class="help-list">
+                <li><span class="check">✓</span> Przygotowanie do matury – poziom podstawowy i rozszerzony</li>
+                <li><span class="check">✓</span> Przygotowanie do egzaminu ósmoklasisty</li>
+                <li><span class="check">✓</span> Nadrobienie zaległości i zrozumienie trudnych tematów</li>
+                <li><span class="check">✓</span> Pomoc w bieżącym materiale szkolnym</li>
+                <li><span class="check">✓</span> Konwersacje i przygotowanie do certyfikatów językowych</li>
+            </ul>
+        </section>
+
+        <!-- Location -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="icon">📍</span>
+                Lokalizacja – zajęcia stacjonarne
+            </h2>
+            <div class="location-tags">
+                <span class="location-tag">📍 Łódź – Polesie</span>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
+                Możliwość dojazdu do ucznia w obrębie wymienionych rejonów.
+            </p>
+        </section>
+
+        <!-- Price -->
+        <section class="section price-section">
+            <h2 class="section-title">
+                <span class="icon">💰</span>
+                Cennik
+            </h2>
+            <div class="price-card">
+                <div class="price-info">
+                    <p class="label">Cena za godzinę zegarową (60 min)</p>
+                    <p class="amount">80 <span>PLN</span></p>
+                    <p class="note">+ ewentualny koszt dojazdu przy większych odległościach</p>
+                </div>
+                <div class="price-badge">
+                    <div class="clock">⏱️</div>
+                    <p>60 minut<br>pełnej uwagi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta-section">
+            <h3>Zapraszam do współpracy! 🤝</h3>
+            <p>Napisz lub zadzwoń – chętnie odpowiem na pytania i umówię się na pierwszą lekcję.</p>
+            <a href="#" class="cta-button">📩 Skontaktuj się ze mną</a>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Stanisław Kotowicz – Korepetycje z Matematyki i Angielskiego</p>
+        </footer>
+    </div>
+</body>
+
+</html>
