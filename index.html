@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html class="scroll-smooth dark" lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -979,19 +979,20 @@
             const amountEl = document.querySelector('.price-info .amount');
             if (amountEl) {
                 const targetNum = 80;
-                amountEl.innerHTML = '0 <span>PLN</span>';
+                const startNum = 150;
+                amountEl.innerHTML = startNum + ' <span>PLN</span>';
                 let counted = false;
                 const counterObserver = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting && !counted) {
                             counted = true;
-                            let current = 0;
+                            let current = startNum;
                             const duration = 1200;
                             const steps = 40;
-                            const increment = targetNum / steps;
+                            const decrement = (startNum - targetNum) / steps;
                             const interval = setInterval(() => {
-                                current += increment;
-                                if (current >= targetNum) {
+                                current -= decrement;
+                                if (current <= targetNum) {
                                     current = targetNum;
                                     clearInterval(interval);
                                 }
