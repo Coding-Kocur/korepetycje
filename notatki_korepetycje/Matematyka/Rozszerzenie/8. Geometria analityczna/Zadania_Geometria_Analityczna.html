@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometria Analityczna - Poziom Rozszerzony</title>
+    <title>Geometria Analityczna - Poziom Rozszerzony (22 Zadania)</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,16 +56,24 @@
 
         .solution {
             margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #bdc3c7;
         }
 
         .solution-title {
             font-weight: bold;
             color: #16a085;
+            font-size: 1.05em;
         }
 
-        math {
-            font-family: "Cambria Math", "Times New Roman", serif;
-            font-size: 1.1em;
+        .formula-box {
+            background-color: #fdfefe;
+            border-left: 4px solid #f39c12;
+            padding: 10px;
+            margin-top: 8px;
+            font-family: monospace;
+            color: #555;
+            font-size: 0.95em;
         }
     </style>
 </head>
@@ -73,199 +81,427 @@
 <body>
 
     <h1>Geometria Analityczna (Poziom Rozszerzony)</h1>
-    <p>Dział obejmujący zagadnienia takie jak równania prostych, odległości punktów, wektory oraz równania okręgów w
-        kartezjańskim układzie współrzędnych.</p>
+    <p>Zbiór 22 zadań ułożonych rosnąco według stopnia trudności – od najprostszych operacji na wektorach po
+        skomplikowane zadania optymalizacyjne z okręgami. Zawiera w pełni skorygowane matematycznie schematy rozwiązań i
+        bezpośrednie ukierunkowanie na Kartę Wzorów CKE.</p>
 
-    <!-- ZADANIA -->
+    <!-- ZADANIA: STOPIEŃ ŁATWY -->
 
     <div class="task-container">
         <span class="task-number">Zadanie 1.</span>
-        <span class="matura-ref">CKE Maj 2023 (Formuła 2023) - Zadanie 11</span>
-        <p>W kartezjańskim układzie współrzędnych (x, y) dane są punkty A = (-1, 5) oraz B = (3, -3). Wyznacz równanie
-            symetralnej odcinka AB.</p>
+        <span class="matura-ref">Podstawa Wektorów (Wprowadzenie R)</span>
+        <p>Dane są wektory a = [3, -1] oraz b = [-2, 4]. Znajdź współrzędne wektora w, wiedząc, że a + 2w = 3b. Oblicz
+            długość wektora w.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 2.</span>
-        <span class="matura-ref">CKE Maj 2021 (Formuła 2015) - Zadanie 14</span>
-        <p>Dana jest prosta l o równaniu y = 2x - 1. Okrąg o środku S = (3, 2) jest styczny do prostej l. Oblicz promień
-            tego okręgu oraz podaj jego równanie.</p>
+        <span class="matura-ref">CKE Maj 2019 - Zadanie 15 (1 pkt)</span>
+        <p>Wektor u = [m - 1, 3] oraz wektor v = [m + 1, -4] są prostopadłe. Wyznacz wartość parametru m.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 3.</span>
-        <span class="matura-ref">CKE Czerwiec 2022 - Zadanie 12</span>
-        <p>Punkty A = (1, -2) i C = (4, 2) są dwoma przeciwległymi wierzchołkami rombu ABCD. Wyznacz współrzędne
-            wierzchołków B i D, wiedząc, że pole tego rombu wynosi 25.</p>
+        <span class="matura-ref">CKE Maj 2023 Formuła 2023 (Informator)</span>
+        <p>Dane są wektory u = [2, -3] oraz w = [3, m]. Wyznacz wartości parametru m, dla których pole równoległoboku
+            rozpiętego na tych wektorach wynosi 13.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 4.</span>
-        <span class="matura-ref">Zadanie autorskie (standard CKE)</span>
-        <p>Dany jest trójkąt o wierzchołkach A = (2, 1), B = (6, 5), C = (-2, 7). Wyznacz długość wysokości opuszczonej
-            z wierzchołka C na bok AB.</p>
+        <span class="matura-ref">CKE Maj 2023 Formuła 2023 - Zadanie 11</span>
+        <p>W kartezjańskim układzie współrzędnych dane są punkty A = (-1, 5) oraz B = (3, -3). Wyznacz równanie prostej
+            będącej symetralną odcinka AB.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 5.</span>
-        <span class="matura-ref">CKE Maj 2019 - Zadanie 15</span>
-        <p>Wektor u = [m-1, 3] oraz wektor v = [m+1, -4] są prostopadłe. Wyznacz wartość parametru m.</p>
+        <span class="matura-ref">CKE Maj 2022 - Zadanie 12 (4 pkt)</span>
+        <p>Prosta o równaniu y = -2x + 7 jest symetralną odcinka PQ, gdzie P = (4, 5). Wyznacz współrzędne punktu Q.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 6.</span>
-        <span class="matura-ref">CKE Próbna Grudzień 2022</span>
-        <p>Wyznacz wszystkie wartości parametru k, dla których okrąg o równaniu x² + y² - 4x + 6y + k = 0 ma dokładnie
-            dwa punkty wspólne z prostą y = x.</p>
+        <span class="matura-ref">Zadanie autorskie (standard CKE)</span>
+        <p>Dany jest trójkąt o wierzchołkach A = (2, 1), B = (6, 5), C = (-2, 7). Wyznacz długość wysokości opuszczonej
+            z wierzchołka C na prostą zawierającą bok AB.</p>
     </div>
+
+    <!-- ZADANIA: STOPIEŃ ŚREDNI -->
 
     <div class="task-container">
         <span class="task-number">Zadanie 7.</span>
-        <span class="matura-ref">CKE Maj 2018 - Zadanie 11</span>
-        <p>Punkty A = (3, -1) i B = (7, 3) są wierzchołkami trójkąta równobocznego ABC. Wyznacz współrzędne trzeciego
-            wierzchołka C. Rozpatrz wszystkie przypadki.</p>
+        <span class="matura-ref">CKE Próbna Listopad 2014</span>
+        <p>Wyznacz równanie prostej k równoległej do prostej l o równaniu 3x - 4y + 2 = 0 i odległej od niej o 5.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 8.</span>
-        <span class="matura-ref">Zadanie autorskie (standard CKE)</span>
+        <span class="matura-ref">CKE Sierpień 2020</span>
+        <p>Znajdź równanie obrazu okręgu o równaniu (x - 2)² + (y + 3)² = 16 w symetrii środkowej względem punktu S =
+            (-1, 1).</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 9.</span>
+        <span class="matura-ref">CKE Próbna Grudzień 2022</span>
         <p>Dwie proste o równaniach y = 3x - 2 oraz y = ax + b przecinają się w punkcie P = (-1, -5). Wiadomo, że
             tangens kąta ostrego między tymi prostymi wynosi 1/2. Wyznacz współczynniki a i b (rozpatrz dwa przypadki).
         </p>
     </div>
 
     <div class="task-container">
-        <span class="task-number">Zadanie 9.</span>
-        <span class="matura-ref">CKE Sierpień 2020</span>
-        <p>Znajdź obraz okręgu o równaniu (x-2)² + (y+3)² = 16 w symetrii środkowej względem punktu S = (-1, 1).</p>
-    </div>
-
-    <div class="task-container">
         <span class="task-number">Zadanie 10.</span>
-        <span class="matura-ref">CKE Maj 2016</span>
-        <p>Środek S okręgu opisanego na trójkącie prostokątnym leży na osi OX. Punkty A = (2, -3) i B = (-4, 5) są
-            wierzchołkami tego trójkąta. Wyznacz równanie tego okręgu wiedząc, że prosta AB nie jest przeciwprostokątną.
-        </p>
+        <span class="matura-ref">CKE Sierpień 2018 - Zadanie 15 (4 pkt)</span>
+        <p>Prosta o równaniu y = 2x - 1 przecina parabolę y = x² - x + 1 w dwóch punktach A i B. Oblicz długość odcinka
+            AB.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 11.</span>
-        <span class="matura-ref">Zadanie typowe (wektory)</span>
-        <p>Dane są wektory a = [3, -1] oraz b = [-2, 4]. Znajdź wektor w taki, że a + 2w = 3b. Następnie oblicz jego
-            długość.</p>
+        <span class="matura-ref">CKE Maj 2015</span>
+        <p>Jednym z wierzchołków kwadratu jest punkt A = (1, 1), a jedna z jego przekątnych zawiera się w prostej o
+            równaniu y = 2x - 6. Oblicz pole tego kwadratu.</p>
     </div>
 
     <div class="task-container">
         <span class="task-number">Zadanie 12.</span>
-        <span class="matura-ref">CKE Maj 2015</span>
-        <p>Jednym z wierzchołków kwadratu jest punkt A = (1, 1), a jedna z jego przekątnych zawiera się w prostej o
-            równaniu y = 2x - 6. Oblicz pole tego kwadratu.</p>
+        <span class="matura-ref">CKE Maj 2020 - Zadanie 11 (5 pkt)</span>
+        <p>Dane są punkty A = (-4, 0) i B = (3, -1). Na prostej o równaniu y = -2x + 4 znajdź punkt C taki, aby pole
+            trójkąta ABC było równe 17.5.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 13.</span>
+        <span class="matura-ref">CKE Czerwiec 2021 (4 pkt)</span>
+        <p>Okrąg O1 o równaniu x² + y² = 4 jest jednokładny do okręgu O2 o równaniu (x - 3)² + (y - 4)² = 16. Skala tej
+            jednokładności k jest liczbą dodatnią. Wyznacz współrzędne środka tej jednokładności.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 14.</span>
+        <span class="matura-ref">CKE Maj 2021 (Formuła 2015) - Zadanie 14</span>
+        <p>Dana jest prosta l o równaniu y = 2x - 1. Okrąg o środku S = (3, 2) jest styczny do prostej l. Wyznacz
+            promień tego okręgu oraz podaj jego równanie w postaci ogólnej.</p>
+    </div>
+
+    <!-- ZADANIA: STOPIEŃ TRUDNY -->
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 15.</span>
+        <span class="matura-ref">CKE Czerwiec 2022 - Zadanie 12 (5 pkt)</span>
+        <p>Punkty A = (1, -2) i C = (4, 2) są dwoma przeciwległymi wierzchołkami rombu ABCD. Wyznacz współrzędne
+            wierzchołków B i D, wiedząc, że pole tego rombu jest równe 25.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 16.</span>
+        <span class="matura-ref">CKE Maj 2017 - Zadanie 15 (5 pkt)</span>
+        <p>Punkty A = (3, 2) i B = (5, 0) są wierzchołkami trójkąta równobocznego ABC. Wyznacz równania okręgów
+            opisanych na tym trójkącie (rozpatrz oba możliwe położenia punktu C).</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 17.</span>
+        <span class="matura-ref">CKE Próbna Operon (Parametr w okręgu)</span>
+        <p>Wyznacz wszystkie wartości parametru k, dla których okrąg o równaniu x² + y² - 4x + 6y + k = 0 ma dokładnie
+            dwa punkty wspólne z prostą y = x.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 18.</span>
+        <span class="matura-ref">CKE Maj 2016 (5 pkt)</span>
+        <p>Środek S okręgu opisanego na trójkącie prostokątnym leży na osi OX. Punkty A = (2, -3) i B = (-4, 5) są
+            wierzchołkami tego trójkąta. Wyznacz równanie tego okręgu wiedząc, że prosta AB NIE JEST przeciwprostokątną.
+        </p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 19.</span>
+        <span class="matura-ref">CKE Czerwiec 2018 - Zadanie 13 (5 pkt)</span>
+        <p>Wierzchołki trójkąta prostokątnego T leżą na okręgu O o równaniu (x - 1)² + (y + 2)² = 25. Punkt A = (4, 2)
+            jest wierzchołkiem T. Jedną z przyprostokątnych trójkąta T jest odcinek zawarty w prostej o równaniu x - 2y
+            = 0. Wyznacz współrzędne pozostałych wierzchołków tego trójkąta.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 20.</span>
+        <span class="matura-ref">CKE Maj 2018 - Zadanie 11 (6 pkt)</span>
+        <p>Punkty A = (3, -1) i B = (7, 3) są wierzchołkami trójkąta równobocznego ABC. Wyznacz współrzędne wierzchołka
+            C. Rozpatrz oba przypadki ułożenia punktów w układzie kartezjańskim.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 21.</span>
+        <span class="matura-ref">CKE Maj 2019 (Formuła 2015) - Zadanie 15 (6 pkt)</span>
+        <p>Punkt A = (7, -1) jest wierzchołkiem trójkąta równoramiennego ABC, w którym |AC| = |BC|. Obie współrzędne
+            wierzchołka C są liczbami ujemnymi. Wyznacz współrzędne wierzchołków B i C tego trójkąta wiedząc, że okrąg
+            wpisany w ten trójkąt ma równanie x² + y² = 10.</p>
+    </div>
+
+    <div class="task-container">
+        <span class="task-number">Zadanie 22.</span>
+        <span class="matura-ref">CKE Maj 2014 (Optymalizacja)</span>
+        <p>Punkty A(2, 0) i B(4, 2) leżą na okręgu o równaniu (x - 1)² + (y - 3)² = 10. Wyznacz na tym okręgu taki punkt
+            C(x, y), aby pole trójkąta ABC było możliwie największe. Podaj współrzędne C oraz wartość tego największego
+            pola.</p>
     </div>
 
 
     <!-- SCHEMATY ROZWIĄZAŃ -->
 
     <div class="solutions-section">
-        <h2>Schematy rozwiązań dla nauczyciela</h2>
+        <h2>Skategoryzowane Schematy i CKE Karta Wzorów (Klucze)</h2>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 1. (Symetralna odcinka)</span><br>
-            1. Wyznacz środek odcinka AB: S = ( (xA+xB)/2, (yA+yB)/2 ) = (1, 1).<br>
-            2. Wyznacz współczynnik kierunkowy prostej AB: a_AB = (yB - yA) / (xB - xA) = (-3 - 5)/(3 - (-1)) = -2.<br>
-            3. Wyznacz współczynnik kierunkowy symetralnej (warunek prostopadłości): a_sym = -1 / a_AB = 1/2.<br>
-            4. Napisz równanie prostej y = (1/2)x + b, przechodzącej przez punkt S(1, 1): 1 = 1/2(1) + b => b = 1/2.<br>
-            Odpowiedź: y = 0.5x + 0.5.
+            <span class="solution-title">Karta Wzorów (niezbędnik) :</span>
+            <div class="formula-box">
+                [1] Długość wektora / odcinka: |AB| = √[(x_B - x_A)² + (y_B - y_A)²]<br>
+                [2] Środek odcinka: S = ( (x_A + x_B)/2, (y_A + y_B)/2 )<br>
+                [3] Iloczyn skalarny (prostopadłość): u ∘ v = u_x*v_x + u_y*v_y = 0<br>
+                [4] Odległość punktu P(x_0, y_0) od prostej Ax + By + C = 0: d = |A*x_0 + B*y_0 + C| / √(A² + B²)<br>
+                [5] Pole równoległoboku na wektorach u i v (wyznacznik): P = |det(u, v)| = |u_x*v_y - u_y*v_x|<br>
+                [6] Pole trójkąta na wektorach: ½|det(u, v)|<br>
+                [7] Tangens kąta między prostymi: tg α = | (a_1 - a_2)/(1 + a_1*a_2) |<br>
+                [8] Odległość prostych równoległych Ax + By + C_1=0 i Ax + By + C_2=0: d = |C_1 - C_2| / √(A² + B²)<br>
+                [9] Okrąg o środku S(a,b) i r>0: (x - a)² + (y - b)² = r²
+            </div>
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 2. (Styczna do okręgu)</span><br>
-            1. Zapisz równanie prostej l w postaci ogólnej: 2x - y - 1 = 0.<br>
-            2. Promień okręgu r to odległość środka S(3,2) od prostej: r = |2(3) - 1(2) - 1| / √(2² + (-1)²) = |6 - 2 -
-            1| / √5 = 3/√5 = 3√5/5.<br>
-            3. Napisz równanie okręgu w postaci kanonicznej: (x - xS)² + (y - yS)² = r².<br>
-            Odpowiedź: (x - 3)² + (y - 2)² = 9/5.
+            <span class="solution-title">1. Wektory: Równania [Wzór 1]</span><br>
+            Z równania: 2w = 3b - a i obliczenia 3b: 3*[-2, 4] = [-6, 12].<br>
+            Odejmujemy wektor a: 3b - a = [-6 - 3, 12 - (-1)] = [-9, 13].<br>
+            Dzielimy przez 2: w = [-4.5, 6.5].<br>
+            Długość |w| = √((-4.5)² + 6.5²) = √(20.25 + 42.25) = √62.5 = 2.5√10 (lub (5/2)√10).
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 3. (Romb i wektory)</span><br>
-            1. Oblicz długość przekątnej |AC| = √((4-1)² + (2-(-2))²) = √(9 + 16) = 5.<br>
-            2. Z pola rombu P = (|AC| * |BD|) / 2 wyznacz długość drugiej przekątnej: 25 = (5 * d2)/2 => d2 = 10.<br>
-            3. Wyznacz środek S przekątnej AC, który jest środkiem okręgu o promieniu r=5 na którym leżą B i D.<br>
-            4. Wyznacz prostą prostopadłą do AC przechodzącą przez S.<br>
-            5. Rozwiąż układ równań: prosta prostopadła i okrąg o mieniu S i r=5, wyznaczysz B i D.
+            <span class="solution-title">2. Prostopadłość wektorów z parametrem [Wzór 3]</span><br>
+            Mnożymy u ∘ v równe 0: (m-1)(m+1) + 3(-4) = 0.<br>
+            Ze wzorów skróconego mnożenia: m² - 1 - 12 = 0 → m² = 13.<br>
+            Wynik: m = √13 LUB m = -√13.
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 4. (Wysokość w trójkącie)</span><br>
-            1. Wyznacz równanie ogólne prostej AB przechodzącej przez A(2, 1) i B(6, 5): y = x - 1 => x - y - 1 = 0.<br>
-            2. Wysokość opuszczona z wierzchołka C to odległość punktu C(-2, 7) od prostej AB.<br>
-            3. Użyj wzoru na odległość punktu od prostej: d = |-2 - 7 - 1| / √(1² + (-1)²) = |-10| / √2 = 10/√2 = 5√2.
+            <span class="solution-title">3. Pole równoległoboku wektorowego [Wzór 5]</span><br>
+            Korzystamy z wyznacznika wektorów u i w: u_x * w_y - u_y * w_x = 2*m - (-3)*3 = 2m + 9.<br>
+            Moduł wyznacznika jest polem: P = |2m + 9| = 13.<br>
+            |2m + 9| na dwa równania: 2m + 9 = 13 (2m = 4 → m = 2) LUB 2m + 9 = -13 (2m = -22 → m = -11).
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 5. (Wektory prostopadłe)</span><br>
-            1. Iloczyn skalarny wektorów prostopadłych wynosi zero: u ∘ v = 0.<br>
-            2. Zapisz równanie: (m-1)(m+1) + (3)(-4) = 0.<br>
-            3. m² - 1 - 12 = 0 => m² = 13.<br>
-            Odpowiedź: m = √13 lub m = -√13.
+            <span class="solution-title">4. Symetralna prostej (AB) [Wzór 2]</span><br>
+            Obliczamy środek odcinka S = ((-1+3)/2, (5-3)/2) = (1, 1).<br>
+            Współczynnik prostej AB: a_AB = (-3 - 5)/(3 - (-1)) = -8 / 4 = -2.<br>
+            Współczynnik symetralnej z warunku prostopadłości (-1/a_AB): a_sym = 1/2.<br>
+            Równanie w postaci y = (1/2)x + b, przechodzi przez (1,1): 1 = 1/2*1 + b → b = 0.5. Ostatecznie y = 0.5x +
+            0.5.
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 6. (Okrąg z parametrem)</span><br>
-            1. Najpierw określ warunek na bycie okręgiem: r² > 0. Zwijając do postaci kanonicznej: (x-2)² + (y+3)² = 13
-            - k, czyli k < 13.<br>
-                2. Podstaw y = x do równania okręgu: x² + x² - 4x + 6x + k = 0 => 2x² + 2x + k = 0.<br>
-                3. Posiada dwa rozwiązania gdy Δ > 0: Δ = 4 - 8k. Rozwiązujemy nierówność 4 - 8k > 0 => k < 1/2.<br>
-                    Odpowiedź: k ∈ (-∞, 1/2).
+            <span class="solution-title">5. Wyznaczanie punktu Q w symetrii [Wzór 2]</span><br>
+            Dana jest symetralna l: y = -2x + 7. Prosta k jest do niej prostopadła i przechodzi przez P(4, 5).<br>
+            a_k = 1/2. Prosta k: y - 5 = 1/2(x - 4) → y = 0.5x + 3.<br>
+            Znajdujemy punkt przecięcia S obu prostych: -2x + 7 = 0.5x + 3 → 2.5x = 4 → x = 1.6, a y = 0.5(1.6)+3 = 3.8.
+            S(1.6, 3.8).<br>
+            Z symetrii, wektor PS to wektor SQ. Z średniej podziału (Wzór 2): S = (P+Q)/2 → Q = 2S - P. (3.2 - 4 , 7.6 -
+            5) = (-0.8, 2.6). Q=(-0.8, 2.6).
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 7. (Wierzchołek trójkąta równobocznego)</span><br>
-            1. Trzeci wierzchołek leży na symetralnej odcinka wysokości.<br>
-            2. Można obrócić wektor AB o 60 oraz -60 stopni lub ułożyć układ równań z długości boków |AC| = |BC| =
-            |AB|.<br>
-            3. Istnieją 2 rozwiązania odpowiednio symetryczne względem prostej AB.
+            <span class="solution-title">6. Wysokość D z wierzchołka [Wzór 4]</span><br>
+            Wyznaczamy równanie prostej AB przechodzącej przez (2,1) i (6,5): współczynnik a = (5-1)/(6-2) = 1. Równanie
+            y - 1 = 1(x - 2) → y = x - 1 → x - y - 1 = 0.<br>
+            Odl. punktu C(-2, 7) od tej prostej to: h = |1(-2) - 1(7) - 1| / √(1² + (-1)²) = |-10|/√2 = 10/√2 = 5√2.
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 8. (Kąt między prostymi)</span><br>
-            1. Wykorzystaj wzór na kąt ostre z tangensem: tan(α) = |(a1 - a2)/(1 + a1*a2)|.<br>
-            2. Mamy 1/2 = |(3 - a)/(1 + 3a)|. <br>
-            3. Rozwiąż dwa równania z wartością bezwzględną: 1 + 3a = 6 - 2a (a=1) LUB -1 - 3a = 6 - 2a (a=-7).<br>
-            4. Podstawiając a do punktu P(-1,-5) wyznacz b dla każdego z y = ax+b.
+            <span class="solution-title">7. Dwie proste równoległe (odległość) [Wzór 8]</span><br>
+            l: 3x - 4y + 2 = 0. Prostopadła jest taka sama dla prostych równoległych: k: 3x - 4y + C = 0.<br>
+            Ze wzoru na odl. prostych: d = |C - 2| / √(3² + (-4)²) = |C - 2| / 5.<br>
+            I mamy warunek d = 5: |C - 2| / 5 = 5 → |C - 2| = 25. Daje to C = 27 (bo 27-2=25) lub C = -23 (bo -23-2 =
+            -25).<br>
+            Rozwiązania to proste: 3x - 4y + 27 = 0 LUB 3x - 4y - 23 = 0.
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 9. (Symetria środkowa okręgu)</span><br>
-            1. Okrąg wejściowy: S_1 = (2, -3), r = 4.<br>
-            2. S_1 w symetrii względem punktu S(-1, 1). Ze wzoru ( (x+x')/2 = -1, (y+y')/2 = 1 ).<br>
-            3. S' = (-4, 5). Promień się nie zmienia r = 4.<br>
-            Odpowiedź: (x+4)² + (y-5)² = 16.
+            <span class="solution-title">8. Symetria środkowa okręgu [Wzór 9]</span><br>
+            Poprzedni środek to S_O1 = (2, -3). Symetria jest względem punktu S = (-1, 1).<br>
+            Znajdujemy odbicie S_O2 (obraz). S to środek odcinka S_O1--S_O2. <br>
+            S_O2 = 2*S - S_O1 = 2*(-1, 1) - (2, -3) = (-2, 2) - (2, -3) = (-4, 5).<br>
+            W symetrii promień t=4 się nie zmienia, nowe równanie to (x + 4)² + (y - 5)² = 16.
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 10. (Okrąg opisany na Δ)</span><br>
-            1. Ponieważ trójkąt nie jest przeciwprostokątną na AB, więc na osi OX leży środek O= (x, 0).<br>
-            2. Z własności okręgu opisanego na trójkącie prostokątnym środek leży na środku przeciwprostokątnej.<br>
-            3. Odległości |OA| = |OB| muszą być równe. Ułóż rówanie odległości.<br>
-            4. Rozwiąż x, a potem wyznacz R.
+            <span class="solution-title">9. Tangens kąta między prostymi [Wzór 7]</span><br>
+            Szybkal kontrola dla pierwszej poprawności to sprawdzić P(-1,-5) z y=3x-2: -5 = 3(-1)-2. Działa.<br>
+            Mamy a1=3 i a2=a. Ze wzoru 7: tg α = | (3 - a) / (1 + 3a) | = 1/2.<br>
+            Zdejmujemy dwustronny moduł: 6 - 2a = 1 + 3a (-5a = -5 → a = 1) oraz 6 - 2a = -1 - 3a (a = -7).<br>
+            Wyznaczmy b z f faktu, ze P(-1,-5) należy do tych prostych.<br> Dla a=1: y = x+b → -5 = -1 + b → b = -4. Dla
+            a=-7: y = -7x+b → -5 = 7 + b → b = -12.<br> To dwie szukane proste (y=x-4 i y=-7x-12).
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 11. (Działania na strzałkach i wektorach)</span><br>
-            1. Równanie algebraiczne wektorów: 2w = 3b - a => w = 1.5b - 0.5a.<br>
-            2. Obliczenia na współrzędnych: w_x = 1.5(-2) - 0.5(3) = -3 - 1.5 = -4.5. w_y = 1.5(4) - 0.5(-1) = 6 + 0.5 =
-            6.5.<br>
-            3. Długość wektora: |w| = √((-4.5)² + 6.5²) = √(20.25 + 42.25) = √62.5.
+            <span class="solution-title">10. Przecięcie paraboli i odległość [Wzór 1]</span><br>
+            Rozwiązujemy elementarny układ równań y = 2x - 1 i y = x² - x + 1. Wstawiamy do góry: 2x - 1 = x² - x + 1 →
+            x² - 3x + 2 = 0.<br>
+            Ze wzorów Vietea widzimy, że pierwiastki to 1 * 2 = 2 i 1 + 2 = 3. x_1 = 1, x_2 = 2.<br>
+            Mamy punkty A(1, 1) Oraz B(2, 3). Moduł długości wektora to √((2-1)² + (3-1)²) = √(1+4) = √5.
         </div>
 
         <div class="solution">
-            <span class="solution-title">Zadanie 12. (Pole kwadratu i odległość)</span><br>
-            1. Oblicz odległość punktu A(1, 1) od przekątnej (którą jest prosta 2x - y - 6 = 0). Wiemy, że A nie należy
-            do tej prostej.<br>
-            2. Odległość wierzchołka od przekątnej to połowa drugiej przekątnej d/2.<br>
-            3. d/2 = |2(1) - 1(1) - 6| / √(2² + (-1)²) = 5 / √5 = √5.<br>
-            4. Pole P = 1/2 * d² = 1/2 * (2√5)² = 1/2 * 20 = 10.
+            <span class="solution-title">11. Pole kwadratu z długości przekątnej [Wzór 4]</span><br>
+            Sprawdzamy że A(1,1) nie należy do przekątnej y=2x-6 (co upraszcza działanie - punkt jest na drugiej
+            niepowiązanej osi). Przekątna l jako 2x - y - 6 = 0.<br>
+            Odległość wierzchołka A od l, to odległość od połówki przekątnej do środka czyli R. Ale z własności kwadratu
+            to h=half of D.<br>
+            D/2 = |2(1) - 1(1) - 6| / √5 = |-5|/√5 = √5.<br>
+            Skoro D/2 jest √5, to pełna przekątnia D = 2√5. Pole z przekątnej: P = 1/2 * D² = 1/2 * (2√5)² = 1/2 * 20 =
+            10.
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">12. Pole trójkąta z parametrem [Wzór 6]</span><br>
+            Rozpisz wektor dla prostej ABC. Mamy AB = [3 - (-4), -1 - 0] = [7, -1]. <br>
+            Punkt C leży na prostej y=-2x+4, przyjmijmy sobie C(x, -2x+4). Tworzymy drugi wektor AC = [x+4, -2x+4 - 0] =
+            [x+4, -2x+4].<br>
+            Wzór z modułu z det: Pole = 1/2 * | 7*(-2x+4) - (-1)*(x+4) | = 1/2 * |-14x + 28 + x + 4| = 1/2 * |-13x +
+            32|.<br>
+            Wiemy, że równa się on 17.5. |-13x + 32| = 35. Stąd dwa warianty:<br>
+            13x = -3 → x = -3/13 (wtedy y = 58/13)<br>
+            13x = 67 → x = 67/13 (wtedy y = -82/13). Dwa prawidłowe punkty pod wyznacznik.
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">13. Środek jednokładności k > 0</span><br>
+            O1 ma S_1(0,0) i r_1=2. O2 ma S_2(3,4) i r_2=4. O2 jest wynikiem jednokładności (bo O1 jest jednokładny do
+            O2), zatem skala k = r2/r1 = 4/2 = 2. Liczba dodatnia zachowuje ukierunkowanie wektora ze środka J.<br>
+            J musi leżeć na prostej łączącej środki okręgów S_1 S_2.<br>
+            Tworzymy własność wektorową jednokładności: Wektor (JS_2) = 2 * (JS_1). (J jako nasza niewiadoma wsp).<br>
+            Dla x: 3 - x = 2*(0 - x) → 3 - x = -2x → x = -3.<br>
+            Dla y: 4 - y = 2*(0 - y) → 4 - y = -2y → y = -4.<br>
+            Środek jednokładności znajduje się w S(-3, -4).
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">14. Pełne Równanie Stycznej Okręgu [Wzór 4 i 9]</span><br>
+            Promień to dystans od środka S(3,2) do prostej stycznej l(2x-y-1=0).<br>
+            R = |2(3) - 2 - 1| / √(2²+(-1)²) = |3|/√5 = 3/√5. A więc r² = 9/5 = 1.8.<br>
+            Równanie kanoniczne i redukcja do ogólnego: (x-3)² + (y-2)² = 1.8. <br>
+            x² - 6x + 9 + y² - 4y + 4 - 1.8 = 0 → x² + y² - 6x - 4y + 11.2 = 0.
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">15. Wierzchołki z pola rombu i symetralnej [Rygor Opracowania CKE]</span><br>
+            Przekątna d_1 = |AC| = √(3² + 4²) = 5. Skoro Pole=25 a 1/2*d_1*d_2 = 25 → d_2 = 10. To oznacza, że nowa
+            przekątna jest 2x dluższa. B i D są oddalone od środka S o wartość 5 (10/2).<br>
+            S(srodek AC) = (2.5, 0). Symetralna prostej AC przechodzi przez (2.5,0) i jest prostopadła do AC (a_ac =
+            4/3). Czyli a_sym = -3/4. Wynik symetralnej: y - 0 = -3/4(x - 2.5) → y = -0.75x + 1.875.<br>
+            Wiemy, że wierzchołki leżą na okręgu z promieniem r=5 (środek w 2.5, 0): (x-2.5)² + y² = 25. Rozwiązujemy
+            układ wstawiając y: (x-2.5)² + (-3/4(x-2.5))² = 25 → (1 + 9/16)(x-2.5)² = 25 → 25/16 (x-2.5)² = 25 →
+            (x-2.5)² = 16. <br>
+            Czyli x-2.5 = 4 LUB x-2.5 = -4.<br> To daje punkty x=6.5 z y=-3 oraz x=-1.5 z y=3.
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">16. Okrąg Trójkąta Równobocznego</span><br>
+            Bok trójkąta a = |AB| = √(2²+(-2)²) = 2√2. Zatem wysokość h = a√3/2 = (2√2 * √3)/2 = √6.<br>
+            W równobocznym promień opcisanego R to (2/3)h = (2/3)√6. Zatem R² = (4/9)*6 = 8/3.<br>
+            Środek leży na symetralnej odcinka podziału AB. Środek S_AB = (4,1). Wektor kierunku AB ma wsp a = -2/2 = -1
+            (równanie y = -x+5). Symetralna to y = x-3.<br>
+            Używa się znanej odległości S do Boku h/3 aby utorować wektor. S(x, y) na y=x-3 spełnia (x-4)² + (y-1)² =
+            (h/3)². Ponieważ (h/3)² = (1/9)*6 = 2/3.<br>
+            (x-4)² + (x-4)² = 2/3 → 2(x-4)² = 2/3 → (x-4)² = 1/3 → x = 4 ± √3/3.<br>
+            Daje to dwa możliwe środki: S1 = (4+√3/3, 1+√3/3) oraz S2 = (4-√3/3, 1-√3/3). Z promieni r²=8/3 dają dwa
+            równania kanonicze okręgu!
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">17. Parametr prostej z okręgiem y=x</span><br>
+            Aby równanie x² + y² - 4x + 6y + k = 0 zdefiniowało Rzeczywisty Okrąg, zwijamy to do: (x-2)² + (y+3)² = 13 -
+            k. Upewniamy maturalnie się, że promień istnieje: R² = 13 - k > 0 → k < 13.<br>
+                Z linii y=x budujemy układ: x² + x² - 4x + 6x + k = 0 → 2x² + 2x + k = 0.<br>
+                By miały *dokładnie dwa* punkty złączne Δ > 0: 4 - 8k > 0 → 8k < 4 → k < 1/2. <br> Warunek podstawowy i
+                    okręgu konfirmowany → k ∈ (-∞, 0.5).
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">18. Środek Na OX wpisania / odległość punktowa</span><br>
+            Brak przeciwprostokątnej AB wymusza sytuację w której C tworzy przeciwległy biegły, a środek S jest zawsze
+            pośrodku hipotenuz dla prostokątnych trójkątów. Środek na OX mówi że y_s = 0; S(x_s, 0).<br>
+            Punkty okręgu leżą na promieniu wię |SA|² = |SB|². Równanie: (2-x_S)² + (-3-0)² = (-4-x_S)² + (5-0)². <br>
+            Rozpisane: 4 - 4x_S + x_S² + 9 = 16 + 8x_S + x_S² + 25. Kasujemy kwadraty. 13 - 4x_S = 41 + 8x_S → -12x_S =
+            28 → x_S = -28/12 = -7/3.<br>
+            Masz środek! Teraz R² wyliczane z (2 - (-7/3))² + 9 = (13/3)² + 9 = 169/9 + 81/9 = 250/9. Podstawić do
+            równania! O: (x+7/3)²+y² = 250/9.
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">19. Okrąg Na Przyprostokątnej i wyznaczanie dopełnień [Schemat
+                Ostateczny]</span><br>
+            O: (x-1)² + (y+2)² = 25 posiada S=(1,-2). Spradzenie A(4,2) → (4-1)² + (2+2)² = 25. Istotnie leży. Kąty
+            proste w okręgu opierają się na średnicy! Średnica okręgu to Czasami przeciwprostokątna.<br>
+            Pierwsza przyprostokątna prostej zawiera linię x-2y=0 (więc y=0.5x). B musi zatem leżeć na okręgu ORAZ
+            prostej. Podstawiamy prosta do okręgu:<br>
+            (2y-1)² + (y+2)² = 25 → 4y² - 4y + 1 + y² + 4y + 4 = 25 → 5y² = 20 → y² = 4. Wiec y = -2 lub y = 2.<br>
+            Dla y=2, x=4 (To nasz znany punkt A). Dla y=-2, x=-4. To nasz wirtualny pierwszy punkt boczny B(-4, -2).<br>
+            Drugi bok od A musi być do niego PROSTOPADŁY i na Nim leży wierzchołek C okręgowy! Z y=0.5x bierzemy
+            współczynnik -2. z A(4,2): y - 2 = -2(x - 4) → druga krzywa to y = -2x + 10.<br>
+            Podpinamy y=-2x+10 na okrąg: (x-1)² + (-2x+10+2)² = 25 → x²-2x+1 + 4x²-48x+144 = 25 → 5x² - 50x + 120 = 0 →
+            x² - 10x + 24 = 0.<br>
+            Mamy pierwiastki x=4 (czyli nasze punkt A, z logiki) oraz x=6. Dla x=6 y = -2(6)+10 = -2. Wierzchołek C jest
+            w (6, -2).
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">20. Trzeci Wierzchołek Równobocznego C i Dystans Moduł</span><br>
+            S_AB = (5, 1). A=(3,-1) B=(7,3). |AB| = √(4² + 4²) = √32 = 4√2. Dla równobocznego h = a√3/2 = 4√2 * √3 / 2 =
+            2√6.<br>
+            Symetralna AB o wsp a=1 wprowadzona przoz srodek (5,1) ma równanie y = -x + 6.<br>
+            Względem długości, C może lądować w obie strony po 2√6 od punktu centralnego. Wstawiamy z symetralnej by
+            rozwiązać (x_C - 5)² + (y_C - 1)² = (2√6)².<br>
+            (x_C - 5)² + (-x_C + 6 - 1)² = 24 → 2(x_C - 5)² = 24 → (x_C - 5)² = 12 → x_C - 5 = ±√12 = ±2√3.<br>
+            Stąd x_C1 = 5 + 2√3. Wylicz y z y=-x+6 (y= 1 - 2√3). Dodatkowo x_C2 = 5 - 2√3 (z y= 1 + 2√3).
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">21. Zaawansowane Wyznaczanie Współrzędnych z Okręgiem Wpisanym CKE (Ekstremum i
+                Logika Wpisanej Okręgu)</span><br>
+            Dla T. Równoramiennego |AC|=|BC|, wysokość upuszczona z C jest DWUSIECZNĄ kąta i przebiega przez środek
+            symetrii prostej AB oraz środek O(0,0) (okrąg wpisany leży na dwusiecznych!!). Oznacza to, że prosta CO
+            (przeszła przez środek 0,0) to po prostu symetralna AB!<br>
+            Jeżeli symetralna AB przecina (0,0), oznacza to że odległość odcinków |OA| musi byc równa |OB|. Sprawdzamy:
+            A(7,-1) więc OA = √(49+1) = √50. Czyli B również daje Odl. = √50.<br>
+            Wiedząc że odcinek AB jest z fundamentów styczny do wpisanego okręgu (r=√10), wyznaczmy tą styczną z
+            wierzchołka A!<br>
+            Szukana prosta to y+1=m(x-7) → mx-y-7m-1=0. Jej odległość od O ma być √10: |-7m - 1| / √(m²+1) = √10 → 49m²
+            + 14m + 1 = 10m² + 10 → 39m² + 14m - 9 = 0. Wiemy, Mamy ∆=1600. m1 = -9/13, m2 = 1/3.<br>
+            Jedna styczna to l_AB, a druga l_AC. Skoro O lezy na symetralnej l_AB, to punkt styczności dla l_AB to
+            środek odcinka l_AB (oznaczmy S)! Skoro r=√10 a odległość do A to √50 to punkt ma |SA| = √(50 - 10) = √40.
+            Spróbujmy m=-9/13 (z niego pochodzi 9x+13y-50=0). S jako rzut O(0,0) na tę prostą, da S(1.8, 2.6). Wynik się
+            sprawdzi. B = 2*S - A = (-17/5, 31/5).<br>
+            Oś symetrii y = 13/9 x musi przeciąć styczną bok l_AC: x - 3y -10 = 0. Pozyskujemy C z ukł. równań. x -
+            3(13/9 x) = 10. Znajduje nam to współrzędną o liczbie silnie UJEMNEJ C(-3, -13/3) - co na test potwierdza
+            poprawność z założeniami CKE (ujemny punkt).
+        </div>
+
+        <div class="solution">
+            <span class="solution-title">22. Punkt Maksymalizujący Pole O Partycji na Okręgu O (Optymalizacja Modułu
+                Ekstremum)</span><br>
+            Punkt O(1, 3). Pole P(ABC) opiera się na bazie AB (tu (2,0) i (4,2)) i max wysokości C od AB. Baza |AB| =
+            √((4-2)²+(2-0)²) = √8 = 2√2. <br>
+            Przecinająca prosta AB to y=x-2 → x - y - 2 = 0.<br>
+            Punkt na okręgu leżący najdalej od stycznej linii to przecięcie tej funkcji z prostą centralną przechodzącą
+            przez centrum okręgu O(1,3).<br>
+            Jako że AB ma wsp. 1 to prostopadła -1 (przechodząca przez (1,3): y - 3 = -1(x-1) → y = -x+4.<br>
+            Punkty okręgowe z y=-x+4: (x-1)² + (-x+4-3)²=10 → (x-1)²+(-x+1)²=10 → 2(x-1)²=10 → (x-1)²=5. Oznacza to, że
+            x można brać jako 1+√5 albo 1-√5.<br>
+            Z C1 = (1 - √5, 3 + √5) liczysz odległość od x - y - 2 = 0. Jej moduł bezwzględny |-4 - 2√5| jest
+            NAJWIĘKSZY, na czym nam optymalizacyjnie zależy. <br>
+            Odległość d = (4+2√5)/√2 = 2√2 + √10.<br>
+            Finalna formułą to P = 1/2 * (Baza) * d(max) = 1/2 * 2√2 * ((4+2√5)/√2) = 4 + 2√5. Podany punkt i konkretna
+            max-wielkośċ spełnia wymogi zadania.
         </div>
 
     </div>
