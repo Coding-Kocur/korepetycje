@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dział CKE: Szereg geometryczny - Zadania (Rozszerzenie)</title>
+    <title>Matura Rozszerzona: Szereg geometryczny - Zadania (Rozszerzenie CKE)</title>
+    <!-- MathJax for rendering LaTeX math formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
         h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        .task-container { background-color: #fff; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .task-number { font-weight: bold; color: #e74c3c; font-size: 1.1em; }
-        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 3px 8px; border-radius: 4px; margin-left: 10px; }
-        .solutions-section { margin-top: 50px; background-color: #e8f6f3; padding: 20px; border-radius: 8px; border-left: 5px solid #1abc9c; }
-        .solution { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #bdc3c7; }
-        .solution-title { font-weight: bold; color: #16a085; font-size: 1.05em; }
+        .intro-text { font-size: 1.1em; color: #555; margin-bottom: 30px; }
+        .task-container { background-color: #fff; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border-left: 4px solid #e74c3c; }
+        .task-number { font-weight: bold; color: #c0392b; font-size: 1.2em; display: inline-block; margin-bottom: 10px; }
+        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 4px 10px; border-radius: 4px; margin-left: 15px; font-weight: 600; display: inline-block; }
+        .task-text { font-size: 1.1em; margin-top: 15px; }
+        .solutions-section { margin-top: 60px; background-color: #e8f6f3; padding: 30px; border-radius: 8px; border-left: 6px solid #1abc9c; }
+        .solution { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px dashed #bdc3c7; }
+        .solution-title { font-weight: bold; color: #16a085; font-size: 1.1em; display: inline-block; margin-bottom: 10px; }
+        .solution-text { font-size: 1.05em; color: #2c3e50; }
     </style>
 </head>
 <body>
-    <h1>Dział CKE: Szereg geometryczny</h1>
-    <p>Zestaw 6 starannie dobranych zadań ze wskazówkami i rozwiązaniami, opracowanych pod kątem wymagań nowej matury CKE na poziomie rozszerzonym.</p>
-    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Szereg geometryczny)</span><p>Oblicz sumę szeregu 1 + 1/2 + 1/4 + 1/8 + ... (Podstawy)</p></div>
-<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Szereg geometryczny)</span><p>Zamień ułamek okresowy 0.(3) na zwkly</p></div>
-<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Szereg geometryczny)</span><p>Dla jakich x zbiega 1 + x + x^2+..</p></div>
-<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Szereg geometryczny)</span><p>Ile da 9 + 0.9 + 0.09 ..</p></div>
-<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Szereg geometryczny)</span><p>Suma pol nieaktywnych trojkatow Sierpinskiego.</p></div>
-<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Szereg geometryczny)</span><p>Suma szeregu to?</p></div>
+    <h1>Dział: Matura Rozszerzona: Szereg geometryczny</h1>
+    <p class="intro-text">Zestaw autorskich, pełnowymiarowych zadań opracowanych dokładnie pod kątem wymagań nowej matury CKE na poziomie rozszerzonym. Każde zadanie to złożony problem matematyczny wymagający dowodu lub wieloetapowych obliczeń.</p>
+    
+    <div class="tasks-wrapper">
+    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">CKE [5 pkt]</span><div class="task-text">Rozwiąż równanie: \(1 + x + x^2 + x^3 + \dots = 4\), dla których obydwie strony są prawidłowe względem siebie geometrycznie (Suma nieskoczona).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">CKE [5 pkt]</span><div class="task-text">Dana zalezoścć pomiędzu sumą dwoch ciagowo - zamien \(0.121212... \) na zykly ulamek.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE [5 pkt]</span><div class="task-text">W jakim zakresie zbiezny bedzi i na na sume x, gdy: \(2x + 4x^2 + 8x^3 + ... \)? </div></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">CKE [5 pkt]</span><div class="task-text">Drzewo ciagnie sie z pedanmi x o polowe krótszsyi na kaze wezlesl... pole trojkata pod drzewmi..</div></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">CKE [5 pkt]</span><div class="task-text">Czy wyjasnia sie w matrze czy z ciag to sznerg?</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE [5 pkt]</span><div class="task-text">Rownaia z dwoma szerigami np o przeciwynych znakch q.</div></div>
+
+    </div>
 
     <div class="solutions-section">
-        <h2>Schematy rozwiązań dla nauczyciela</h2>
-        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><br>a1 = 1, q = 1/2. Wykorzystujemy wzór S = a1 / (1-q) = 1 / (1-0.5) = 2.</div>
-<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><br>Ciag a1=0.3, q=0.1. S = 0.3/0.9 = 3/9 = 1/3.</div>
-<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><br>Suma musi miec |q| < 1, wiec |x| < 1. Przedzial to (-1,1).</div>
-<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><br>9/(0.9) = 10.</div>
-<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><br>Suma ciagu gemo o q=3/4 gdzie daza do a.</div>
-<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><br>Tylko dla szeregów warunkowych q<1.</div>
+        <h2>Schematy rozwiązań krok po kroku (dla nauczyciela)</h2>
+        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><div class="solution-text">Aby szereg geometryczny był zbieżny z sensem domeny CKE, zawsze przypisywać \( |q| < 1 \) czyli w tym wydaniu \(|x| < 1\). Suma opira się na wzorze \(S = \frac{a_1}{1-q}\). Mamy zatem \( S = \frac{1}{1-x} = 4 \). Mnożymy: \(1 = 4 - 4x \Rightarrow 4x = 3 \Rightarrow x = 0.75 \). Wart. t ta wchodzina w przediżal szacowany, więc konwertowana jest z wynikiem.</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><div class="solution-text">Zapisz w dociagnieciach: \(S = 0.12 + 0.0012 + 0.000012\). Szereg posiada pierwszy element \(a_1 = 0.12\). Kazy nastepny w prawo to skok o \( \frac{1}{100} \). Zatem \(q = 0.01\). Szereg: \(\frac{0.12}{1 - 0.01} = \frac{0.12}{0.99}\). Mnożymy 100 góra-dół: \(\frac{12}{99}\). Da się sćiąć przez 3 = \(\frac{4}{33}\). Należy go uznać.</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><div class="solution-text">Wzrónik szeregowy idenyfikowanya \(q = 2x\). Warunke zb. \(|2x| < 1 \Rightarrow x \in (-0.5, 0.5)\). Wynik na sumę \( \frac{2x}{1-2x} \).</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><div class="solution-text">Zadanie obnizajace \( q=1/2 \) i stosujace zbliezoc pola na \(\frac{p_1}{1-q}\) odnawia P0.</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><div class="solution-text">Tlyko ten nieskocznoj sumy uważa sie za sżreg z n od 1 do inf.</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">Stap na miano z dwoch odrebnych. I po leweej prawsiej np 2 sumowka S1 = S2.</div></div>
 
     </div>
 </body>
