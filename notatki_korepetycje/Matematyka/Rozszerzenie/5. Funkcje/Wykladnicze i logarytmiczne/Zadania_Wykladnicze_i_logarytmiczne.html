@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dział CKE: Wykladnicze i logarytmiczne - Zadania (Rozszerzenie)</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .task-container { background-color: #fff; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .task-number { font-weight: bold; color: #e74c3c; font-size: 1.1em; }
+        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 3px 8px; border-radius: 4px; margin-left: 10px; }
+        .solutions-section { margin-top: 50px; background-color: #e8f6f3; padding: 20px; border-radius: 8px; border-left: 5px solid #1abc9c; }
+        .solution { margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px dashed #bdc3c7; }
+        .solution-title { font-weight: bold; color: #16a085; font-size: 1.05em; }
+    </style>
+</head>
+<body>
+    <h1>Dział CKE: Wykladnicze i logarytmiczne</h1>
+    <p>Zestaw 6 starannie dobranych zadań ze wskazówkami i rozwiązaniami, opracowanych pod kątem wymagań nowej matury CKE na poziomie rozszerzonym.</p>
+    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Wykladnicze i logarytmiczne)</span><p>Rozwiąż nierówność (1/2)^{x-3} > 8^{2x}. (CKE Maj 2018, 2 pkt)</p></div>
+<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Wykladnicze i logarytmiczne)</span><p>Rozwiąż równanie: log_2(x) + log_2(x-2) = 3.</p></div>
+<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Wykladnicze i logarytmiczne)</span><p>Rozwiąż 3^{x} + 3^{x-1} = 36.</p></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Wykladnicze i logarytmiczne)</span><p>Zbadaj asymptoty funkcji y = log(x-4) + 2.</p></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Wykladnicze i logarytmiczne)</span><p>Rozwiąż nierówność z log o podstawie a < 1: log_{0.5}(2x - 1) >= 1.</p></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">Wymagania: CKE Poziom Rozszerzony (Wykladnicze i logarytmiczne)</span><p>W jakim punkcie wykres f(x) = 2^x - 8 przecina osie?</p></div>
+
+    <div class="solutions-section">
+        <h2>Schematy rozwiązań dla nauczyciela</h2>
+        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><br>Podstawy muszą być równe. (2^{-1})^{x-3} > (2^3)^{2x} => 2^{3-x} > 2^{6x}. Z racji podstawy > 1: 3-x > 6x => 7x < 3 => x < 3/7.</div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><br>Dziedzina x > 2. Iloczyn log argumentów: log_2(x(x-2)) = 3 => x^2 - 2x = 8 => x^2 - 2x - 8 = 0. x=4 lub x=-2 (odrzucamy). Odp: x = 4.</div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><br>Wyciągamy 3^{x-1} przed nawias: 3^{x-1}(3 + 1) = 36 => 3^{x-1} = 9 => 3^{x-1} = 3^2 => x-1 = 2 => x = 3.</div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><br>Dziedzina: x > 4. Asymptota pionowa to x = 4 (prawostronna). Nie posiada asymptoty poziomej ze względu na dążenie log do inf.</div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><br>Dziedziina 2x - 1 > 0 => x > 1/2. Obracamy mianownik bo podstawa=0.5: 2x - 1 <= (0.5)^1 => 2x <= 1.5 => x <= 0.75. W dziedzinie: x in (0.5, 0.75>.</div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><br>Dla OX: 2^x - 8 = 0 => 2^x = 8 => x=3. Punkt (3,0). Dla OY: f(0) = 2^0 - 8 = -7. Punkt (0,-7).</div>
+
+    </div>
+</body>
+</html>
