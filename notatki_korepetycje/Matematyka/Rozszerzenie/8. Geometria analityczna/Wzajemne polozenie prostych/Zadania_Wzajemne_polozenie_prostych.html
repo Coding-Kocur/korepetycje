@@ -29,7 +29,7 @@
 <div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE Matura Czerwiec 2019</span><div class="task-text">Wyznacz wartości parametru \( m \), dla których proste o równaniach \( m^2x + 2y - 1 = 0 \) i \( 4x - y + m = 0 \) są a) równoległe, b) układ stanowi równania tożsamościowe nałożone.</div></div>
 <div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (CKE Maj 2023 Formuła)</span><div class="task-text">Prosta \(k: y = 2mx + 3\) i prosta \(l: y = (m^2+1)x - 2\) dla pewnego \( m \) są prostopadłe. Wykaż w oparciu o analityczny dowód, że nie istnieje żadne twarde i rzeczywiste \( m \) dające taką ość prostopadłość.</div></div>
 <div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Udowodnij, że ramy prostych rzuconych pod wektor \(l: (k^2+1)x - \sqrt{2}y + 1 = 0\) i \(k: \sqrt{8}x + (2k^2+2)y - 7 = 0\) zawsze i de facto wszem i wobec na każdym metrum m są zawsze wobec siebie wzajemnie prostopadłe dla każdego rzutu i dają węzeł 90 stopni.</div></div>
-<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Próbna Matura Grudzień 2014</span><div class="task-text">Zbadaj w oparciu o wektory normalne \( ec{n_1} \) i \( ec{n_2} \), dla jakich \(a\) dwie proste \( (a+2)x + 3y - 1 = 0 \) oraz \( ax + (a-2)y + 4 = 0 \) są równoległe a zarazem leżą daleko w oddali na innych b i c. Rzuć też tło czy da się dobrać \( a \) jako rzut kąta 90* by wektor \( ec{n_1} \circ ec{n_2} = 0 \) o zerowym układzie na obrocie w 2D wyszedł i nie dawał luk rzędu osnowych w a.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Próbna Matura Grudzień 2014</span><div class="task-text">Wyznacz te wartości parametru \(a\), dla których obydwie proste określone równaniami \( (a+2)x + 3y - 1 = 0 \) oraz \( ax + (a-2)y + 4 = 0 \) są równoległe.</div></div>
 <div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Dane są trzy proste, \(k: y = 2x - 1\), \(l: y = mx + 2\), \(p: y = (m^2-1)x - 3\). Wyznacz wszystkie \( m \) tak by te trzy krzywe rozbiegały się prosto na matrycy z jednego docelowego w węźle puku, ewentualnie krzyżowały w wielki trójkąt, i co warunkuje m.</div></div>
     </div>
 
@@ -86,16 +86,16 @@ Wychodzi wielkie, twarde zero tj. czysta absolutna równość \( 0 = 0 \). Co na
 </div></div>
 
 <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">
-<div class="formula-box">Wzór dla wektorów normalnych: Równoległe (proporcjonalne) wektory \( \vec{n_1} \times \vec{n_2} = 0 \) czyli \( A_1 B_2 - A_2 B_1 = 0 \). Prostopadłe: \( A_1 A_2 + B_1 B_2 = 0 \).</div>
+<div class="formula-box">Równoległe proste to proporcjonalne współczynniki stelaża \( A_1 B_2 - A_2 B_1 = 0 \).</div>
 Równoległość:<br>
-Wyznacznik daje w równanie dla ułama i dół do osi kartezjańskich:<br>
-\( (a+2)(a-2) - 3 \cdot a = 0 \Rightarrow a^2 - 4 - 3a = 0 \Rightarrow a^2 - 3a - 4 = 0 \).<br>
-\( \Delta = 9 + 16 = 25 \Rightarrow \sqrt{\Delta} = 5 \).<br>
-\( a_1 = \frac{3-5}{2} = -1 \), \( a_2 = \frac{3+5}{2} = 4 \). Zastrzeżenie do różności c: przy \( a=4 \), \(A_1=6, B_1=3, C_1=-1\), a \(A_2=4, B_2=2, C_2=4\). Te są na prawdę i mierzalnie równoległe na dając dystans \(|d|\) na u bazy ucieczek o odległość np 4, wcale nie są rzutem te same stąd tło daje od obydwa.
-<br>
-Prostopadłość - na wektor z bazy: \( \vec{n_1} \circ \vec{n_2} = 0 \):<br>
-\( (a+2)a + 3(a-2) = 0 \Rightarrow a^2 + 2a + 3a - 6 = 0 \Rightarrow a^2 + 5a - 6 = 0 \).<br>
-Tutaj stelaż daje dla i w delte mierzalną na karoserii \(\Delta=25+24=49 \). Rzut z bazy na u to 1 i -6 od a jako osi we pętli. 
+Mamy: \(A_1=a+2, B_1=3\) oraz \(A_2=a, B_2=a-2\).<br>
+Podstawiamy do wzoru \(A_1 B_2 = A_2 B_1\):<br>
+\( (a+2)(a-2) = 3 \cdot a \).<br>
+Stosujemy wzór skróconego mnożenia: \( a^2 - 4 = 3a \).<br>
+Otrzymane równanie kwadratowe: \( a^2 - 3a - 4 = 0 \).<br>
+\( \Delta = (-3)^2 - 4(1)(-4) = 25 \Rightarrow \sqrt{\Delta} = 5 \).<br>
+\( a_1 = \frac{3-5}{2} = -1 \), \( a_2 = \frac{3+5}{2} = 4 \).<br>
+Sprawdzamy współczynniki wolne C: \(C_1/C_2 = -1/4\). Dla policzonych a, stosunek A1/A2 (lub B1/B2) nie wynosi -1/4, więc proste nie nakładają się (są rozłączne). Odp: \( a \in \{-1, 4\} \).
 </div></div>
 
 <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 7.</span><div class="solution-text">

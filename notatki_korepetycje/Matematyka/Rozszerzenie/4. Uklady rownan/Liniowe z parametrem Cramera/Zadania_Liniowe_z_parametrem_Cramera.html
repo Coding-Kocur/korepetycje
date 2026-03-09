@@ -27,10 +27,10 @@
     <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">CKE Próbna Matura Maj 2019</span><div class="task-text">Rozwiąż układ równań i sprawdź, dla jakich wartości parametru \( m \) układ równań \( egin{cases} x + my = 1 \ mx + y = 1 \end{cases} \) jest z rzędu Crammerowych układem nieoznaczonym, a dla jakich dającym parę krzyżową liczb?</div></div>
 <div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Matemaks</span><div class="task-text">Zbadaj w oparciu o macierz wyznacznikową \( W \): dla jakich \( k \) układ \( egin{cases} (k-1)x + 2y = 3 \ x + ky = -1 \end{cases} \) jest sprzeczny?</div></div>
 <div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE Matura Czerwiec 2022</span><div class="task-text">Wyznacz wszystkie wartości \(m\), dla których układ Cramera \( egin{cases} 2x + my = m \ x - y = 1 \end{cases} \) dostarcza dwa zdania dodatnie układu par dla odciętej i rzędnej \( (x > 0, y > 0) \).</div></div>
-<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Rozwiąż układ dla stelażu u łamanych p rzutów układu gdzie \( egin{cases} p x + (p+2) y = -1 \ x + py = 2 \end{cases} \). Zbadaj we z pod po r dla których t o p o f z dla po m l u o \dots czyli na i to w: P=2.</div></div>
-<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Dany s egin{cases} 2x-y = m+1 \ 3x+y = 2m-1 \end{cases}. Wy by p na d k f w w na os na o p d f u we wę! z. P d \(y = |x|\).</div></div>
-<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Matura Sierpień 2016</span><div class="task-text">Roz układ u k g układ f t \(p(x) - \dots \)</div></div>
-<div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Ilościowe wezły rzędnych dla k...</div></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Rozwiąż wyznacznikami i zbadaj układ Cramera: \( \begin{cases} p x + (p+2) y = -1 \\ x + py = 2 \end{cases} \). Zbadaj we dla jakich wartości \(p\) układ ten jest sprzeczny.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Dany układ równań Cramera: \( \begin{cases} 2x-y = m+1 \\ 3x+y = 2m-1 \end{cases} \). Wyznacz parametr \(m\), dla którego rzędne układu x, y spełniają równanie \( y = |x| \).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Matura Sierpień 2016</span><div class="task-text">Określ dyskusję rozwiązań Cramera dla u z l: \( \begin{cases} x + (a+1)y = a \\ ax + (a-1)y = a-2 \end{cases} \). Określ warunki dla zbioru pustego oraz jednego punktu.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Zbadaj liczbę rozwiązań układu w zależności od parametru \(a\): \( \begin{cases} ax + (a-1)y = 1 \\ (a-2)x + ay = a \end{cases} \)</div></div>
     </div>
 
     <div class="solutions-section">
@@ -74,13 +74,47 @@ D y > 0:<br>
 Z r by z po na s a d i i l a u od c po \(\cap\) c z c dla w : \(\dots m \in (-\infty, -2) \cup (2, \infty) \).
 </div></div>
 <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><div class="solution-text">
-<div class="formula-box"> \dots </div>...</div></div>
+<div class="formula-box">Sprzeczność przy układzie wzorów C.: \( W = 0 \), a dające w obrys \( W_x \neq 0 \) lub \( W_y \neq 0 \).</div>
+Obliczamy wyznacznik główny W: <br>
+\( W = p^2 - (p+2) = p^2 - p - 2 \).<br>
+Miejsca zerowe W = 0: \(\Delta = 9, \sqrt{\Delta}=3 \Rightarrow p_1 = -1, p_2=2 \).<br>
+Rozpatrujemy rzut z dla os p i \( p = -1 \):<br>
+\( W_x = \begin{vmatrix} -1 & 1 \\ 2 & -1 \end{vmatrix} = 1 - 2 = -1 \neq 0 \). Sprzeczność.<br>
+Rozpatrujemy dla \( p = 2 \):<br>
+\( W_x = \begin{vmatrix} -1 & 4 \\ 2 & 2 \end{vmatrix} = -2 - 8 = -10 \neq 0 \). Sprzeczność.<br>
+Sprzeczny zatem gdy \( p \in \{-1, 2\} \).
+</div></div>
 <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><div class="solution-text">
-<div class="formula-box"> \dots </div>...</div></div>
+<div class="formula-box">Baza Cramera: \(x = \frac{W_x}{W}, y = \frac{W_y}{W}\). Warunek z zadania: \( y = |x| \).</div>
+Liniowe g y i x na l do: <br>
+\( W = 2 - (-3) = 5 \).<br>
+\( W_x = m+1 - (-2m+1) = 3m \). Stąd \( x = \frac{3m}{5} \).<br>
+\( W_y = 4m-2 - (3m+3) = m-5 \). Stąd \( y = \frac{m-5}{5} \).<br>
+Podstawy we warunek na moduł to: \( \frac{m-5}{5} = \left| \frac{3m}{5} \right| \Rightarrow m - 5 = |3m| \).<br>
+Rozwiązanie z własności bezwzględnej: \( 3m = m - 5 \lor 3m = -(m - 5) \).<br>
+D 1: \( 2m = -5 \Rightarrow m = -2.5 \). Sprawdzamy: \( -2.5 - 5 = -7.5 \neq |3(-2.5)|\). Sprzeczne c s ! z n.<br>
+D 2: \( 4m = 5 \Rightarrow m = 1.25 \). Sprawdzamy: \(1.25 - 5 <0 \) s r a po ok też z sprz. <br>
+Rozwiązanie: Brak takiego m \((m \in \emptyset)\).
+</div></div>
 <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">
-<div class="formula-box"> \dots </div>...</div></div>
+<div class="formula-box">Sprzeczność: W = 0 oraz \(W_x \neq 0\) lub \(W_y \neq 0\). Rozwiązanie oznaczone: \(W \neq 0\).</div>
+Dyskusja rozwiązania: <br>
+\(W = 1(a-1) - a(a+1) = a - 1 - a^2 - a = -a^2 - 1\).<br>
+Zauważmy, że równanie \( -a^2 - 1 = 0 \Rightarrow a^2 = -1 \) nie ma rozwiązań rzeczywistych. Oznacza to, że niezależnie od wartości parametru \(a\), wyznacznik główny W nigdy nie jest równy 0 (\(W \neq 0\) dla \(a \in \mathbb{R}\)).<br>
+Wnioski: <br>
+Ponieważ wyznacznik W zawsze jest różny od zera, ten układ równań Cramera zawsze posiada dokładnie jedno rozwiązanie (punkt) i nie posiada pustego rozwiązania dla żadnej miary A.
+</div></div>
 <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 7.</span><div class="solution-text">
-<div class="formula-box"> \dots </div>...</div></div>
+<div class="formula-box">Rozpatrzenie rzędne Cramera dla układu równań dwóch prostopadłych na wyznaczniki.</div>
+Liczymy wyznacznik W:<br>
+\(W = a^2 - (a-1)(a-2) = a^2 - (a^2 - 3a + 2) = 3a - 2\).<br>
+Gdy \(W = 0 \Rightarrow 3a - 2 = 0 \Rightarrow a = \frac{2}{3}\).<br>
+1) Jeśli \( a \neq \frac{2}{3} \), układ jest oznaczony - ma 1 rozwiązanie \((\frac{W_x}{W}, \frac{W_y}{W})\).<br>
+2) Rozpatrujemy dla \( a = \frac{2}{3} \):<br>
+\(W_x = \begin{vmatrix} 1 & a-1 \\ a & a \end{vmatrix} = a - a(a-1) = a - a^2 + a = 2a - a^2\)<br>
+Wstawiając \(a = \frac{2}{3}\): \(W_x = \frac{4}{3} - \frac{4}{9} = \frac{8}{9} \neq 0\).<br>
+Ponieważ \(W = 0\) układ jest u podstaw a \(W_x \neq 0\), więc system z Cramera dla \(\frac{2}{3}\) jest w pełni sprzeczny (0 rozwiązań).
+</div></div>
     </div>
 </body>
 </html>
