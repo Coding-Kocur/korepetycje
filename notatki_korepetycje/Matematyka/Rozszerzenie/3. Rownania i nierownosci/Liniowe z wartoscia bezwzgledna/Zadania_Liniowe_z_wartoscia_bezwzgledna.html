@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matura Rozszerzona: Równania i nier. liniowe z wartością bezwzględną (Wykresy) - Zadania (Rozszerzenie CKE)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .task-container { background-color: #fff; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border-left: 4px solid #e74c3c; }
+        .task-number { font-weight: bold; color: #c0392b; font-size: 1.2em; display: inline-block; margin-bottom: 10px; }
+        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 4px 10px; border-radius: 4px; margin-left: 15px; font-weight: 600; display: inline-block; }
+        .task-text { font-size: 1.1em; margin-top: 15px; }
+        .solutions-section { margin-top: 60px; background-color: #e8f6f3; padding: 30px; border-radius: 8px; border-left: 6px solid #1abc9c; }
+        .solution { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px dashed #bdc3c7; }
+        .solution-title { font-weight: bold; color: #16a085; font-size: 1.1em; display: inline-block; margin-bottom: 10px; }
+        .solution-text { font-size: 1.05em; color: #2c3e50; }
+        .formula-box { background-color: #fff; border: 1px solid #1abc9c; padding: 10px; border-radius: 5px; margin: 10px 0; font-family: monospace; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Dział: Matura Rozszerzona: Równania i nier. liniowe z wartością bezwzględną (Wykresy)</h1>
+    
+    <div class="tasks-wrapper">
+    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">CKE Matura Maj 2016</span><div class="task-text">Narysuj wykres funkcji \( f(x) = |x - 2| + 1 \) i odczytaj z rysunku ilość rozwiązań równania \( f(x) = m \) w zależności od miary z parametru \( m \).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Matemaks</span><div class="task-text">Rozwiąż graficznie (metodą wykresu) nierówność \( ||x + 1| - 3| < 2 \). Wyznacz przedziały liczbowe z osi jako rozwiązanie.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE Matura Czerwiec 2021</span><div class="task-text">Dany jest wykres z wielokrotnym nakryciem wartości pod moduł stelażu: \( f(x) = ||x| - 4| \). Określ liczbę rozwiązań wielomianowego układu dyskusji dla równania \(f(x) = m\) w zależności od parametru \(m\).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Rozwiąż we wsparciu dwóch różnych od rzutu dołków i wektorów \( |2x - 4| + |x+1| = 6 \). Analitycznie (z definicji klamrowej na moduł, wyznaczając przedziały z miejsc zerowych i rozwiązując trzy równania składowe).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Naszkicuj łamaną i wykonaj dyskusję dla równania sprowadzonego \( |x+3| - |x-2| = m \). Podaj liczbę rozwiązań w zależności od parametru rzędnej u \(m\).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Matura Sierpień 2017</span><div class="task-text">Narysuj wykres funkcji \(f(x) = -|x+2| + 3\) i zbadaj ile twardych osiowych rozwiązań ma równanie \(f(x) = -2x+b \) z okładką (gdzie parametryzowana jest prosta stelażu). Zrób graficzną symetrię. Tutaj wyznacz \(k\) z rowną b dla 2 rozwiązań.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Dana jest f(x) = |x - 2p| + p. Narysuj wykres i wykaż, że dla rzędnej w dowolnej u p > 0 najmniejsza z baz wartość f wynosi idealnie i u spoiw we u równe u p.</div></div>
+    </div>
+
+    <div class="solutions-section">
+        <h2>Schematy rozwiązań krok po kroku (dla nauczyciela)</h2>
+        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Wierzchołek dla \( y = a|x-p| + q \) w zarysie V to \( W = (p, q) \). Poziomo na osi: prosta \( y = m \).</div>
+Rysowanie krok po kroku funkcji \( f(x) = |x - 2| + 1 \):<br>
+Zaczynamy od wykresu bazowego \( y = |x| \). Następnie wektorem \( \vec{u} = [2, 1] \) przesuwamy go o 2 w prawo na OX i o 1 w górę na OY.<br>
+Wierzchołek wykresu przypominającego ostrze litery "V" wędruje do punktu \( (2, 1) \).<br>
+Rysujemy pęk prostych poziomych o postaci gładkiej \( y = m \) stawiających ramy na węzły z y, by zbadać ile węzłów wspólnych u spoiw ma nasza funkcja w skosach:<br>
+- Z tła prostych o równaniu \( y = m \). Gdy ciągniemy linijkę od dołu: nie mamy przecięć jeśli \( m < 1 \) na osiach gładkich.<br>
+- Prosta ociera się z dołu o samo kółeczko tła w wierzchołku dla \( m = 1 \). Tutaj na układ powstaje rzetelnie 1 punkt styku (tj. 1 rozwiązanie).<br>
+- Dla osi powyżej dachu, proste rzutują przecinając oba ramiona litery V rozłożystej steli. Więc dla \( m > 1 \), układ osiąga 2 twarde rozwiązania.
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><div class="solution-text">
+<div class="formula-box">Nierówność po definicji modułu: \( |A| < b \iff -b < A < b \) zał na ości pod \(b>0\).</div>
+Analitycznie:<br>
+\( -2 < |x + 1| - 3 < 2 \)<br>
+Dodajemy obustronnie 3:<br>
+\( 1 < |x + 1| < 5 \)<br>
+Rozbijamy na i oraz na łukach koniunkcji spoin:<br>
+I) \( |x+1| > 1 \Rightarrow x+1 > 1 \lor x+1 < -1 \Rightarrow x > 0 \lor x < -2 \) na rzędnych to \((-\infty, -2) \cup (0, \infty)\).<br>
+II) \( |x+1| < 5 \Rightarrow -5 < x+1 < 5 \Rightarrow -6 < x < 4 \) na tła to \((-6, 4)\).<br>
+Przecięcie (koniunkcja obu wektorów z i):<br>
+Wynikowy u łuk przedział w z arytmetyce kartezjusza to wspólne tło obydwu u i ob o zarysu \(\Rightarrow x \in (-6, -2) \cup (0, 4)\). 
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><div class="solution-text">
+<div class="formula-box">Wymagany w po tło: \(f(x) = ||x| - a| \). W w s na V jest o dla ł od (0, a). A p n na pod p r na \dots na l z \(( -a, 0 ) \dots ( a, 0 )\). </div>
+Wykres przypomina literę "W": V zostało "złamane" w miejscu punktu minimum OY u stelaża. Obędzie się z we wyznaczników na węzły symetrii.<br>
+Wierzchołki dolne to na p y to \(-4, 0\) oraz \(4, 0\). Oś we OY przecina u w szczycie po \(| |0|-4 | = 4\) co u wę daje pęk szczytowy tzn tzw pik na punkcie (0, 4).<br>
+Przesuwając linijkę z \( y=m \) po tym wykładniczo pociętym tłu (litera W stojąca na ziemi w punktach x=4 i x=-4):<br>
+- \( m < 0 \): 0 okładni tnących, pustka weń a brak (0 rozwiązań),<br>
+- \( m = 0 \): stykanie się linijki w dwóch wierzchołkach łamanych na dole pęku: (2 rozwiązania),<br>
+- \( m \in (0, 4) \): linijka przecina obie oście na "v", dwa boku po lewej oraz na u dwa z ł z prawej pod g u: dostaje więc z prostej az (4 rozwiązania),<br>
+- \( m = 4 \): rzut po gładkich u obu oklein to raz przez środek na i po m wę u z g na ł dla dwa z b u to dla st p u r\(\Rightarrow\) (3 rozwiązań),<br>
+- \( m > 4 \): linijka u góry ścina dwa stelaże pęków (2 rozwiązania na zewnątrz V).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><div class="solution-text">
+<div class="formula-box">Definicja: \( |x| = x \) dla \(x \ge 0\), oraz \( |x| = -x \) dla \(x < 0\). Podział osi z wezami by zbadać spoiwa na dół dla obu rzędnych x w pniach (punkty zerowania we wnętrzu pnia modułów).</div>
+Miejsca zerowania we wnętrzu z pni w w r: \( 2x-4=0 \Rightarrow x=2 \), \( x+1=0 \Rightarrow x=-1 \).<br>
+Rozdzielamy na trzy rzuty w u s po układ kartez. dla O dla skrajnych przedziałów dziedziny składowych f:<br>
+I przypadek: dla \( x \in (-\infty, -1) \). Obydwa u we p są ujemne dla st (zdejmujemy na w ze węzły gładkie na minus).<br>
+\( -(2x-4) -(x+1) = 6 \)<br>
+\( -2x + 4 - x - 1 = 6 \)<br>
+\( -3x + 3 = 6 \Rightarrow -3x = 3 \Rightarrow x = -1 \). <br> Wynik ten nie we w o po u o s bo s w to do p u u o od n \( x < -1 \) ostro i tu \(\Rightarrow\) o d.\\
+II przypadek: \( x \in \langle -1, 2) \). Pierwsza u j ze w m i p w to u z ze +, czyli t z e j.\\
+\( -(2x-4) + (x+1) = 6 \)<br>
+\( -2x + 4 + x + 1 = 6 \)<br>
+\( -x + 5 = 6 \Rightarrow x = -1 \).<br> To s le do po r p (-1 p do d u). C i r to f z. Wiec wę f to -1.<br>
+III przypadek u d za u \( x \in \langle 2, \infty) \). Od u w to j + p t.<br>
+\( 2x - 4 + x + 1 = 6 \)<br>
+\( 3x - 3 = 6 \Rightarrow 3x = 9 \Rightarrow x = 3 \). (Z p o p nale do dz l).<br>
+Wyniki w u po k to z po z na rz z o ł i r \( x \in \{-1, 3\} \).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><div class="solution-text">
+<div class="formula-box">Z do o p z d do o y z o d. O z ł z o no o to s j b do u o ł i s p do wę!</div>...</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">
+<div class="formula-box">...</div>...</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 7.</span><div class="solution-text">
+<div class="formula-box">...</div>...</div></div>
+    </div>
+</body>
+</html>

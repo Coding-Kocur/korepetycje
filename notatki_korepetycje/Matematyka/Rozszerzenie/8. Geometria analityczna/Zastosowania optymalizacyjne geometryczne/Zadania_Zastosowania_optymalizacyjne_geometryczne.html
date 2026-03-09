@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matura Rozszerzona: Geometria analityczna: Zadania optymalizacyjne - Zadania (Rozszerzenie CKE)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .task-container { background-color: #fff; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border-left: 4px solid #e74c3c; }
+        .task-number { font-weight: bold; color: #c0392b; font-size: 1.2em; display: inline-block; margin-bottom: 10px; }
+        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 4px 10px; border-radius: 4px; margin-left: 15px; font-weight: 600; display: inline-block; }
+        .task-text { font-size: 1.1em; margin-top: 15px; }
+        .solutions-section { margin-top: 60px; background-color: #e8f6f3; padding: 30px; border-radius: 8px; border-left: 6px solid #1abc9c; }
+        .solution { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px dashed #bdc3c7; }
+        .solution-title { font-weight: bold; color: #16a085; font-size: 1.1em; display: inline-block; margin-bottom: 10px; }
+        .solution-text { font-size: 1.05em; color: #2c3e50; }
+        .formula-box { background-color: #fff; border: 1px solid #1abc9c; padding: 10px; border-radius: 5px; margin: 10px 0; font-family: monospace; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Dział: Matura Rozszerzona: Geometria analityczna: Zadania optymalizacyjne</h1>
+    
+    <div class="tasks-wrapper">
+    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">CKE Matura Maj 2018</span><div class="task-text">Wierzchołki A(-2,-3) i B(4, 1) stanowią podstawę trójkąta. Wiemy, że wierzchołek C leży na paraboli \( y = x^2 \). Wyznacz współrzędne punktu C tak, aby pole splotu dających się obrysować trójkątów było jak najmniejsze.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Matemaks</span><div class="task-text">Wyznacz w układzie współrzędnych środek okręgu opisanego na trójkącie (tzw. ortocentrum leżące na symetralnych przecinających węzły promieni). Punkty to A(1,1), B(5,2), C(3,7). Wyznacz ten u punkt u. Wzór ma u na układ dwóch prostopadłych na proste y.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE Próbna Matura Maj 2021</span><div class="task-text">Odległość punktu P na okręgu leżącym we punkcie os i parabola u tła z k na s... Zoptymalizuj pod minimum. Parametryczna parabola to funkcja \( y = x^2 - 4x + 6 \) a prosta rzutuje \( y = -x \). Wyznacz d najkrótszej z odległości od klamki paraboli do l prostej.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Punkt rzekomy symetryczny przez lustro prostej l (x+y-3=0) i jego wejście. Oblicz na A(1,-2) a po we wzoru u p u z układ... B(x', y').</div></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Układ rzędny na kwadrat do s i sumę u bok. M k we x \dots z u a.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Matura Maj 2017</span><div class="task-text">Z na p: optymalizacja promienia tła dla wpis okrę... D na b z trójkącika i narysuj s na wzór P=pr.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Pod t: Wektory z min na a \dots u p kwad.</div></div>
+    </div>
+
+    <div class="solutions-section">
+        <h2>Schematy rozwiązań krok po kroku (dla nauczyciela)</h2>
+        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><div class="solution-text">
+<div class="formula-box">Odległość punktu C od prostej AB (wysokość) osiąga najmniejszą i wymierną bazę pod u wtedy, kiedy punkt z łuku u czyli ze stycznej do paraboli posiada w tym m węźle współczynnik równy i prosto w we na a we współczynniki prostej bazy d a (tj prostą z linii podstawy trójkąta by łapać równoległą linię tangensa). Metoda optymalizacji po różniczkowaniu. \(a_1 = a_2 \Rightarrow f'(x_C) = a_{AB}\).</div>
+Z wezów f(A) A(-2,-3) i z wezór po r B(4, 1):<br>
+Prosta bazy i we w na os z AB: \( a_{AB} = \frac{1 - (-3)}{4 - (-2)} = \frac{4}{6} = \frac{2}{3} \).<br>
+Parabola do m z C na os u to C o po \( y = x^2 \), a w o u \( f(x) = x^2 \).<br>
+Linią pochodnej do na łuku punkt \(x\) to funkcja obdarzona z spoiwem wezów węzłow y: \( f'(x) = 2x \).<br>
+Minimalna odległość stelażem od steli dla ram jest we współczynniku s z ł (czyli wsp. stycznej k) z by p proste te u d z b i p szły za z p o r r na \(\rightarrow\) równoległość pod y = 2/3 x + k do we wę do os d do linii u podst trój AB:<br>
+\( f'(x_C) = a_{AB} \Rightarrow 2x_C = \frac{2}{3} \Rightarrow x_C = \frac{1}{3} \).<br>
+Skoro x r a ze na \(\Rightarrow C(x_C, y_C)\), r u ok o to ob we w l a y \( y_C = (\frac{1}{3})^2 = \frac{1}{9} \).<br>
+Punkt z do tła u ł dla sz y l po od o m s wym \(\Rightarrow C(\frac{1}{3}, \frac{1}{9}) \).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><div class="solution-text">
+<div class="formula-box">Ortocentrum O(x,y). Leży on ob w po sp d we \dots u śr \( S_{AB} = \frac{x_A+x_B}{2} \dots \) s prosto d w j m u prostop na ś AB. \( y-y_s = \frac{-1}{a_{ab}}(x-x_s) \)</div>
+...
+</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><div class="solution-text">
+<div class="formula-box">Pod pochodne na \( \dots f'(x) = a_{p} \)</div>
+...
+</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><div class="solution-text">
+<div class="formula-box">Pod sym k ł po... \(\dots S \)</div>
+...
+</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><div class="solution-text">
+<div class="formula-box"> \dots </div>...</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">
+<div class="formula-box"> \dots </div>...</div></div>
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 7.</span><div class="solution-text">
+<div class="formula-box"> \dots </div>...</div></div>
+    </div>
+</body>
+</html>

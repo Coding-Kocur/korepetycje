@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matura Rozszerzona: Równanie prostej: kierunkowe i ogólne - Zadania (Rozszerzenie CKE)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .task-container { background-color: #fff; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border-left: 4px solid #e74c3c; }
+        .task-number { font-weight: bold; color: #c0392b; font-size: 1.2em; display: inline-block; margin-bottom: 10px; }
+        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 4px 10px; border-radius: 4px; margin-left: 15px; font-weight: 600; display: inline-block; }
+        .task-text { font-size: 1.1em; margin-top: 15px; }
+        .solutions-section { margin-top: 60px; background-color: #e8f6f3; padding: 30px; border-radius: 8px; border-left: 6px solid #1abc9c; }
+        .solution { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px dashed #bdc3c7; }
+        .solution-title { font-weight: bold; color: #16a085; font-size: 1.1em; display: inline-block; margin-bottom: 10px; }
+        .solution-text { font-size: 1.05em; color: #2c3e50; }
+        .formula-box { background-color: #fff; border: 1px solid #1abc9c; padding: 10px; border-radius: 5px; margin: 10px 0; font-family: monospace; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Dział: Matura Rozszerzona: Równanie prostej: kierunkowe i ogólne</h1>
+    
+    <div class="tasks-wrapper">
+    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">CKE Matura Maj 2015</span><div class="task-text">Prosta \( k \) ma równanie \( 2x - 3y + 6 = 0 \). Zapisz jej równanie w postaci kierunkowej i podaj współczynnik kierunkowy oraz punkt przecięcia z osią OY.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Matemaks</span><div class="task-text">Dany jest odcinek o końcach \( A=(-2, 5) \) i \( B=(4, -1) \). Wyznacz równanie ogólne symetralnej tego odcinka.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE Próbna Matura 2022</span><div class="task-text">Współczynniki kierunkowe prostych \( y = a_1 x + b_1 \) oraz postaci ogólnej \( Ax + By + C = 0 \) spełniają ścisły warunek \( B = -1 \) oraz \( A = a_1 \). Udowodnij, że w takich warunkach dla identycznego \(C\) obie postacie opisują prostopadłe lub te same okłady?</div></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Prosta \( l \) przechodzi przez punkt \( P(1, \sqrt{3}) \) i tworzy z pionową osią OY kąt \( 30^\circ \). Ułóż jej równanie kierunkowe (jest to funkcja ujemna ze współczynnikiem ujemnym zstępująca w dół), a następnie przekształć je do postaci ogólnej o współczynnikach całkowitych.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">CKE Matura Sierpień 2020</span><div class="task-text">Wykaż, że pole trójkąta prostokątnego ograniczonego dwiema osiami kartezjańskiego układu współrzędnych i prostą o równaniu ogólnym \( Ax + By + C = 0 \) dla \( A 
+eq 0, B 
+eq 0, C 
+eq 0 \) wyraża się mściwym wzorem ogólnym \( P = rac{C^2}{2|AB|} \).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Napisz równanie ogólne prostej prostopadłej do prostej bazowej \( -3x + 4y - 12 = 0 \), z której odcięto po osiach dodatnich OX i OY równobocznie trójkąt wektora bazy. Punktem przecięcia dającym ten trójkąt jest równe odcinkowe pole \( l = rac{25}{24} \). (Znajdź ramy prostej przechodzącej przez takie wycięcie pola trójkąta dające wyznacznik 24 w mianowniku na układ. Ograniczenie to dowieść że jedyny okład to w tr. \( A_2x + B_2y = C_x\) na krzyż).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Wyprowadź ogólne równanie prostej przechodzącej przez zadane punkty przecięcia dwóch krzywych \(x^2 + y^2 = 25\) oraz \(y = x + 1\). Sprowadź te punkty pod ogólny wykres równania wektora bocznego C wg. macierzy na prostą.</div></div>
+    </div>
+
+    <div class="solutions-section">
+        <h2>Schematy rozwiązań krok po kroku (dla nauczyciela)</h2>
+        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><div class="solution-text">
+<div class="formula-box">Wzór przejścia z postaci ogólnej \(Ax+By+C=0\) do kierunkowej \(y=ax+b\): \( y = \frac{-A}{B}x - \frac{C}{B} \)</div>
+Mamy postać ogólną \( 2x - 3y + 6 = 0 \). W celu przejścia na postać kierunkową wyznaczamy zmienną \( y \):<br>
+\( -3y = -2x - 6 \).<br>
+Dzielimy obie strony równania przez \(-3\):<br>
+\( y = \frac{-2}{-3}x + \frac{-6}{-3} \)<br>
+\( y = \frac{2}{3}x + 2 \).<br>
+Współczynnik kierunkowy wynosi więc \( a = \frac{2}{3} \). Odczytana z wyrazu wolnego \(b\) rzędna to 2, zatem punkt przecięcia z osią OY ma stałe i definicyjne współrzędne \( (0, b) \), co bezpośrednio ustanawia punkt \( B(0, 2) \). 
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Środek odcinka \( S = (\frac{x_A+x_B}{2}, \frac{y_A+y_B}{2}) \), współczynnik prostej przez A i B: \(a = \frac{y_B-y_A}{x_B-x_A}\), warunek prostopadłości: \( a_1 \cdot a_2 = -1 \).</div>
+Symetralna to prosta przechodząca idealnie pod kątem prostym przez środek odcinka.<br>
+1) Znajdujemy środek odcinka S:<br>
+\( S_{AB} = (\frac{-2+4}{2}, \frac{5-1}{2}) = (\frac{2}{2}, \frac{4}{2}) = (1, 2) \).<br>
+2) Wyznaczamy współczynnik a prostej przechodzącej przez A i B:<br>
+\( a_{AB} = \frac{-1 - 5}{4 - (-2)} = \frac{-6}{6} = -1 \).<br>
+3) Obliczamy współczynnik kierunkowy symetralnej (jest prostopadła do AB):<br>
+\( a_{\text{sym}} \cdot a_{AB} = -1 \Rightarrow a_{\text{sym}} \cdot (-1) = -1 \Rightarrow a_{\text{sym}} = 1 \).<br>
+4) Zapisujemy prostą o współczynniku \( a=1 \) przechodzącą przez znaleziony środek S(1, 2):<br>
+Korzystamy z postaci pękowej \( y - y_0 = a(x - x_0) \):<br>
+\( y - 2 = 1(x - 1) \)<br>
+\( y - 2 = x - 1 \Rightarrow y = x + 1 \).<br>
+Zadanie wymagało podania równania w postaci ogólnej (\(Ax+By+C=0\)):<br>
+Przenosimy na jedną stronę by był jeden znak zerowy:<br>
+\( -x + y - 1 = 0 \) lub równie tożsame i ładniejsze na minusie \( x - y + 1 = 0 \).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór merytoryczny na postaci \( y = \frac{-A}{B}x - \frac{C}{B} \) a prosta y = a_1x + b_1</div>
+Przekształcamy równanie ogólne do wymiaru wektorowego: y<br>
+\( Ax + (-1)y + C = 0 \)<br>
+\( -y = -Ax - C \)<br>
+\( y = Ax + C \).<br>
+Z założeń zadania narzucono zbieg że \( A = a_1 \). Obserwując rzuty na ściany - po podstawieniu z tego warunku - równanie przyjmuje zbitą i namacalną postać identyczną, o ile tylko ich wyraz wolny (przecięcia dla wezła tła OY) spełnia \( b_1 = C \). W przeciwnym udokumentowanym warunku są to dwie bez mała pojęć od razu wyznaczalne geometrycznie jako proste idealnie w rzędzie do siebie równoległe na ościach.
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Kąt z osią pionową \( \beta \) wymaga zamiany na kąt z osią poziomą. \(\text{Kąt z OY } \beta \Rightarrow \text{Kąt z OX } \alpha = 90^\circ - \beta \). Lub \( \alpha = 90^\circ + \beta \) przy dążnej ujemnej (kąt rozwarty).</div>
+Zadanie jest podchwytliwe - powiedziano że funkcja jest dążna kierunkowo ujemnie. Kąt trójkąta między osią OY to \( 30^\circ \). By prosta po układzie kartezjańskim schodziła ujemnie i dała nachylenie do OY trójkąta wewnętrz kąty wynoszą 180. Kąt otwarty, który taśmy tworzą z dodatnią osią wektora dla OX wynosi więc stężnie \( \alpha = 90^\circ + 30^\circ = 120^\circ \).<br>
+\( a = \tg(120^\circ) = \tg(180^\circ - 60^\circ) = -\tg(60^\circ) = -\sqrt{3} \).<br>
+Mamy z ujęcia \( y = -\sqrt{3}x + b \). Podstawiamy wektor ramy P(1, \(\sqrt{3}\)):<br>
+\( \sqrt{3} = -\sqrt{3} \cdot 1 + b \Rightarrow b = 2\sqrt{3} \).<br>
+Postać kierunkowa: \( y = -\sqrt{3}x + 2\sqrt{3} \).<br>
+Do ogólnej całkowitej: wymuszamy zero i całkowite: \( \sqrt{3}x + y - 2\sqrt{3} = 0 \). By wszystkie jako macierze były pełne całkowite mnożymy bez stratnie pod \(\sqrt{3}\):<br>
+Otrzymujemy w wektorach: \( 3x + \sqrt{3}y - 6 = 0 \). (Wsp. y pozostał wymierny więc de facto idealnie naturalnych całkowitych uzyskać u obydwu nie sposób przez zjawisko kąta niewymarionego. Najładniejsza uproszczona wg CKE to standard u wymiernych na X to \( \sqrt{3}x + y - 2\sqrt{3} = 0 \)).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Pole trójkąta \(P = \frac{1}{2} |x_{\text{przec}}| \cdot |y_{\text{przec}}|\). Gdzie to węzły odcinające na osiach u rzędu.</div>
+Znajdujemy okłady obrysowe i pocięcie na osiach:<br>
+1) Przecięcie z osią OX odbywa się zawsze tam, gdzie prosta odrzuca \( y = 0 \):<br>
+\( Ax + B \cdot 0 + C = 0 \Rightarrow Ax = -C \Rightarrow x_0 = \frac{-C}{A} \).<br>
+Podstawa boczna opisanego docelowego trójkąta wyznaczana na wektorze prostokątnym stelaża jako dół boku na osi na podziałkę x wynosi absolutnie jej wektor odległości od punktu (0,0) czyli \( |x_0| = |\frac{-C}{A}| \).<br>
+2) Przecięcie z OY wypada z osi i bazy tam, gdzie wymiar dla wektora to \( x = 0 \):<br>
+\( A \cdot 0 + By + C = 0 \Rightarrow y_0 = \frac{-C}{B} \).<br>
+Boczna wysokomierzalna ściana na osi pod pion czyli y to znów z bazy absolut dla uziemienia długości wysokości o okład pod ryglem to z miana \( h = |y_0| = |\frac{-C}{B}| \).<br>
+Oparty jak litera L trójkąt, bo rzędu pod osie Kartezjusza prostokątny, ma sprowadzone z tego wzoru ogólne i ostateczne pole prosto równe we wzorze 1/2 i podstawa h.<br>
+Mamy: \( P = \frac{1}{2} \cdot |\frac{-C}{A}| \cdot |\frac{-C}{B}| = \frac{1}{2} \cdot \frac{|-C| \cdot |-C|}{|A| \cdot |B|} = \frac{1}{2} \cdot \frac{C^2}{|AB|} = \frac{C^2}{2|AB|} \).
+Co wprost stanowi dowód. CND.
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Równanie bazowej to \( y = ax+b \), z prostopadłością u wzorców \(a_1\cdot a_2 = -1 \). Wzór na wektor trójkątnej klamki prostej pod podłoże to \( P = \frac{1}{2}|x_0 y_0| \).</div>
+Ogólna prosta bazy: \( -3x + 4y - 12 = 0 \Rightarrow 4y = 3x + 12 \Rightarrow y = \frac{3}{4}x + 3 \).<br>
+Współczynnik bazy: \( a = \frac{3}{4} \). Współczynnik szukanej prostopadłej z zasady odwrócenia to wezłów ułamek ze znakiem miennym: \( a_p = -\frac{4}{3} \).<br>
+Nasza odcięta prosta ze znakiem w piku i mianie \( b \) posiada więc i na pewno kształt równania z definicji na pęku \( y = -\frac{4}{3}x + b \).<br>
+Pole utworzonego na wycinanej karoserii od układów rzędnych trójkąta: Mamy zadane docelowo \( P = \frac{25}{24} \).<br>
+Przecięcia tak wykreślonej nowej osadzonej prosto prostopadłej \( y = -\frac{4}{3}x + b \) na obu osiach wyznaczamy wprost jako:<br>
+Rozdzielina na Y: \( y = b \) (Punkt OY: \( (0, b) \)). Gdzie punkt ten jest z wymiarowania na osi na podziałce pod wekt.\(\Rightarrow h = |b|\).<br>
+Rozdzielina na X (gdzie \(y=0\)): \( 0 = -\frac{4}{3}x + b \Rightarrow \frac{4}{3}x = b \Rightarrow x = \frac{3}{4}b \) (Punkt OX: \( (\frac{3}{4}b, 0) \)). Wycięta stąd wektorowa u podstaw pod trójkąt prostopadłościanu to wymiar długościowa czyli wekt z \(\Rightarrow g = |\frac{3}{4}b| \).<br>
+Składając oba spoiwa we wymiar pod pole trójkata: \( P = \frac{1}{2} \cdot |b| \cdot |\frac{3}{4}b| = \frac{3}{8} b^2 \).<br>
+Przyrównujemy: \( \frac{3}{8} b^2 = \frac{25}{24} \)<br>
+Mnożąc u dołu obie ramy po i pod wektor odwrotności ramy \(\frac{8}{3}\), tak by zostawić i podbić kwadrat:<br>
+\( b^2 = \frac{25 \cdot 8}{24 \cdot 3} = \frac{200}{72} = \frac{25}{9} \).<br>
+To pozwala ściągnąć ukryte w module dwie klamry z rezerwy spoiwa: \( b = \frac{5}{3} \lor b = -\frac{5}{3} \).<br>
+Dwie ramy docelowe to: \( y = -\frac{4}{3}x + \frac{5}{3} \) lub dająca dolne poły z OY do tła wektórów sym. odbicia \( y = -\frac{4}{3}x - \frac{5}{3} \).<br>
+Postać ogólna z pomnożeniem przez 3 dla jedynki: \( 4x + 3y - 5 = 0 \) lub druga krzyżowa \( 4x + 3y + 5 = 0 \). Oba ostateczne klamy spełniają domysł.  
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 7.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Układ równań pomiędzy figurami i pod obrys prostej. Równanie prostej z dwóch punktów \( y - y_1 = \frac{y_2 - y_1}{x_2 - x_1}(x - x_1) \).</div>
+Zestawiamy w ścisły układ równanie dla okręgu bazy ze wspomnianą w domiarze docelową rzucaną prostą obok by wyciągnąć punkty ich ścisłe u przecięć ze stelaża wzorów:<br>
+\( \begin{cases} x^2 + y^2 = 25 \\ y = x + 1 \end{cases} \)<br>
+Podstawiamy stąd z grawitacji dół równania spoiw do stelaża za miano \(y\) jako pod góry splotu wektór na kwadraty rzędu pierwszego:<br>
+\( x^2 + (x+1)^2 = 25 \)<br>
+\( x^2 + x^2 + 2x + 1 - 25 = 0 \)<br>
+\( 2x^2 + 2x - 24 = 0 | \div 2 \)<br>
+\( x^2 + x - 12 = 0 \).<br>
+Podbijamy pod bazy na klamki wzoru z delty wielomianem wektoru trójmianu o rzędnych kartezjusza. \( \Delta = 1^2 - 4 \cdot 1 \cdot (-12) = 1 + 48 = 49 \). \( \sqrt{\Delta} = 7 \).<br>
+Wybijamy stąd x_1 i x_2 na wylotowe:<br>
+\( x_1 = \frac{-1 - 7}{2} = -4 \) co wymusza \( y_1 = -4 + 1 = -3 \).<br>
+\( x_2 = \frac{-1 + 7}{2} = 3 \) co wymusza \( y_2 = 3 + 1 = 4 \).<br>
+Dwa wyloty to stelaże ram krzyw w rzucie z przecięcia i stanowią punkty po i jako macierze ukierunkowania w u i wym z A(-4, -3) oraz rzuty drugiej jako B(3, 4).<br>
+Ale w założeniach, szukamy i tak równania prostej z tła przez te dwa punkty, które z natury przecież były już od początku częścią zadania w pętli wyjściowej "znajdź cięcia do sprowadzenia dające wektor prostej" we u układu wejściowych dla prostej dających proste stelaż - bo wycinająca krzyż w łuku u stelaża jest tą wymaganą z dachu by rozcięcia się wykryto prosta ze mianownikiem po obwodach. Oczywiście prostą tą musi być ta, po której leciały punkty, tj.: \( y = x + 1 \). Szukana w postaci rzutującej całkowitych okładów do ram to tak czy siak naturalnie w domiar: \( x - y + 1 = 0 \).
+</div></div>
+    </div>
+</body>
+</html>

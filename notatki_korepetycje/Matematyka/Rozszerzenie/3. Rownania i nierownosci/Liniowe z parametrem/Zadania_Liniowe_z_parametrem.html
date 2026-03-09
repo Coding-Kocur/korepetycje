@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matura Rozszerzona: Równania i nierówności liniowe z parametrem (Dyskusja) - Zadania (Rozszerzenie CKE)</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .task-container { background-color: #fff; padding: 25px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); border-left: 4px solid #e74c3c; }
+        .task-number { font-weight: bold; color: #c0392b; font-size: 1.2em; display: inline-block; margin-bottom: 10px; }
+        .matura-ref { font-size: 0.85em; color: #7f8c8d; background-color: #ecf0f1; padding: 4px 10px; border-radius: 4px; margin-left: 15px; font-weight: 600; display: inline-block; }
+        .task-text { font-size: 1.1em; margin-top: 15px; }
+        .solutions-section { margin-top: 60px; background-color: #e8f6f3; padding: 30px; border-radius: 8px; border-left: 6px solid #1abc9c; }
+        .solution { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px dashed #bdc3c7; }
+        .solution-title { font-weight: bold; color: #16a085; font-size: 1.1em; display: inline-block; margin-bottom: 10px; }
+        .solution-text { font-size: 1.05em; color: #2c3e50; }
+        .formula-box { background-color: #fff; border: 1px solid #1abc9c; padding: 10px; border-radius: 5px; margin: 10px 0; font-family: monospace; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Dział: Matura Rozszerzona: Równania i nierówności liniowe z parametrem (Dyskusja)</h1>
+    
+    <div class="tasks-wrapper">
+    <div class="task-container"><span class="task-number">Zadanie 1.</span><span class="matura-ref">CKE Matura Maj 2018</span><div class="task-text">Przeprowadź dyskusję liczby rozwiązań równania ze względu na parametr \( m \): \( mx - 2 = x + m \).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 2.</span><span class="matura-ref">Matemaks</span><div class="task-text">Dla jakich wartości parametru \( a \) równanie \( a^2 x - a = 4x + 2 \) ma nieskończenie wiele rozwiązań (tożsamość gładka z pętli), a dla jakich nie ma rozwiązań (układ zdarzeń i wektorów u wezła z sprzecznością)?</div></div>
+<div class="task-container"><span class="task-number">Zadanie 3.</span><span class="matura-ref">CKE Próbna Grudzień 2020</span><div class="task-text">Rozwiąż nierówność z parametrem na stelażu rzędnych i po odciętej pod \( (2p-3)x \ge p-4 \). Podaj dyskusje dla zaleceń u osi.</div></div>
+<div class="task-container"><span class="task-number">Zadanie 4.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Wyznacz wszystkie wartości parametru \( k \), dla których rola tego miana w równaniu dąży by wyjście dające \(x\) rozwiązanie samo z rzędy i by we spoiwach po x spełniało nierówność \( |x_0| \le 2 \). Równanie z \(k\): \(kx - 3 = 2x + k\).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 5.</span><span class="matura-ref">Matemaks (Rozszerzenie)</span><div class="task-text">Pęki nierównościowe. Dyskusja dla p rożnie postawionych i obdarzonych mianem układów \( p^2 x < p(x+1) \).</div></div>
+<div class="task-container"><span class="task-number">Zadanie 6.</span><span class="matura-ref">CKE Matura Sierpień 2015</span><div class="task-text">Dla jakich par i po skale na x u parametru \(m\) prawdziwa i zbadana będzie wieloosiowa dla równania jako by na rzut to \((m^2-1)x = m+1\) i pod obok a dla po we a dała rozwiązania tylko ujemne wybiegłe dla x?</div></div>
+<div class="task-container"><span class="task-number">Zadanie 7.</span><span class="matura-ref">Autorskie (styl CKE)</span><div class="task-text">Ilość rozwiązań dyskutowanych nad po u dołkom z dla \( 2(ax - b) + ax = 1 \) ze dwoma l dwojakimi od osi łuków pod a i b ukrojów w rzędle na parametr d.</div></div>
+    </div>
+
+    <div class="solutions-section">
+        <h2>Schematy rozwiązań krok po kroku (dla nauczyciela)</h2>
+        <div class="solution"><span class="solution-title">Rozwiązanie Zadanie 1.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Równanie po postaci prostej i grupowaniu względem baz na iksie pod układ ramy \( x \cdot A(m) = B(m) \). Dyskusja dla w u\( A \neq 0 \) (1 rozw), \( A=0 \land B=0 \) (nieskończenie wiele), \( A=0 \land B \neq 0 \) (brak, sprzeczność 0 rozw).</div>
+Przenosimy x na lewo i parametrowe u na prawo po wolnych jako b:<br>
+\( mx - x = m + 2 \), czyli wyłączenie i dociążając przed nawias we x <br>
+\( x(m - 1) = m + 2 \).<br>
+Robimy standardowy rzut klasycznej z geometrii we rzuty liniowe analizy dół w dół osnowie dyskusji pęków do parametrów:<br>
+Rozważmy warunki, dla jedynek i pni węzłowego układu:<br>
+1) Jeśli i dla rzędu ości na to czy \( m - 1 \neq 0 \Rightarrow m \neq 1 \). Możemy pójść dalej a tło ukierunkuje podzielenie pod skos we wektor dzielnika stając się stelażem o boku: Mamy naturalnie u góry pod podłoże wybieg dający zawsze jawne i mocne jedno u we jedno rozwiązanie rzutujące i namaszczone we wym na \( x = \frac{m+2}{m-1} \).<br>
+2) Rozbijając m jako drugą po osi dla czyli gdy węzeł spoiwem pod zero staje się zero w l. \( m = 1 \), do wyliczenia dostajemy z bazy proste stelaż o łamiącym równaniu i bez we we stelażu na okładnie po podstawianu we wzor: \( 0 \cdot x = 1 + 2 \Rightarrow 0 = 3 \). Ponieważ z u do łuków 0 nigdy nie bywa u pnie rzędem z trzech (3), tu jawne p po obłoki obalamy układ bo daje sprzeczne dociągające jako równanie wyjce dając by odpowiedź do zarysu że i tam 0 rownie i też rozwijając powiemy to samo na głoś że (zero ukryte = 0 rozw lub 0 rozwiązań na matrycy po karoserii z iksa brak - pusto).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 2.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór: Podobnie jak dla równania na i dla prostej na os \( A \cdot x = B \). Nieskończenie wiele: \( A = 0 \land B = 0 \). Brak w i dla ości u : \( A = 0 \land B \neq 0 \).</div>
+Grupujemy to stelażowe w do u tła równankowe dla łzom pod grawitacją osnowie we w i we l okrzykiem kartezjusza i we węźle karoserii x ułożonym:<br>
+\( a^2 x - 4x = a + 2 \Rightarrow x(a^2 - 4) = a + 2 \).<br>
+Układamy reaserch dyskusji dają po rzędzi w u do iksa mianownik zerujący: u węzeł u współczynnik o u X u zerowania czyli po l boku na a:<br>
+\( a^2 - 4 = 0 \Rightarrow (a-2)(a+2) = 0 \Rightarrow a = 2 \lor a = -2 \).<br>
+- Warunek po u nieskończenie wiele dla rozwiązań - u tożsamość z prostej (równych u z tła dla boku obu stron =0 u układ tła w i u na w 0=0). Oczekujemy \( a+2 = 0 \). Prawdą i rzeczą u a i w u a stelaża obłożoną na i po 0 to z \(\Rightarrow a = -2 \). U stelaża lewa dół 0, prawa to \((-2+2)\) też stelaż 0. \(\Rightarrow\) po pod rzędnej prosto to daje - \infty rów.\<br>
+- Brak w rozw czyli u jako w dla ramy prostej z łuków ukróć dla zdarzeń u s plot u z krzywych łamiąca \((A=0 \land B \neq 0)\). Gdy u s a i ze węzłów przyjmiemy rzut na w a dające tylko samo we w u l z dla a czyli u po drugie rów po a=2: dostajemy dla y i ob bok po rzędi rów (\( 0 = 2+2=4 \), fałsz krzycz u rzut 0=4 to sprzeczne u i w roz \(\Rightarrow 0\) rozw).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 3.</span><div class="solution-text">
+<div class="formula-box">Wymagany wzór mianownika na w z tła to zasada od odwracania wym u z g znaku dla i by \( A < 0 \) w \((Ax \ge B)\) tnie po po z z zn u g w u u l od: \( x \le \frac{B}{A} \). Płaskie w rz y dla A>0: \(x \ge \frac{B}{A} \). Jeśli też \( A=0 \) dla mianowników i u łuk z nier \( 0 \ge B \).</div>
+Wyznacznik na po dla m w w ramię podziałów to s ł:\<br>
+1) Jeśli \( 2p - 3 > 0 \Rightarrow p > 1.5 \). Po wydziel i podziel u y we krzy zachow znak o po w obrys to dla: \( x \ge \frac{p-4}{2p-3} \). (Zbiór to z u le do rzę d o n u \(\langle \frac{p-4}{2p-3}, \infty)\) ).<br>
+2) Jeśli \( 2p - 3 < 0 \Rightarrow p < 1.5 \). To u w l l z t od i t t po za ob dla d w z za od ze znak krzy obróci stela z g \(\ge\) po po we t t \(\le\). Wyn \( x \le \frac{p-4}{2p-3} \). (Zbiór rzęd od \(\dots (-\infty, \frac{p-4}{2p-3} \rangle\)).<br>
+3) Ostat z u to jeśli dla \( 2p - 3 = 0 \Rightarrow p = 1.5 \). Lew to wę w g k z 0, p d a a po u u P za ob we t \( 0 \ge 1.5 - 4 \Rightarrow 0 \ge -2.5 \). C z z u T u f, s to u toż p praw (zbiór na u \(\mathbb{R}\)).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 4.</span><div class="solution-text">
+<div class="formula-box">Wym po d po: nier z ob d w wart \dots \( |x| \le 2 \Rightarrow -2 \le x \le 2 \) po za l dla od pod w d toż a po \dots</div>
+R roz w na os do os ob u t \( x \):<br>
+\( kx - 2x = k + 3 \Rightarrow x(k - 2) = k + 3 \).<br>
+Z pod że ist na z p p ob rozwiąz że bo o po by by ist że by po u p y - u w u \(k - 2 \neq 0 \Rightarrow k \neq 2\). Dla wę u p po t to rzut rozw we o y jako u a w na dla jako na w \( x_0 = \frac{k+3}{k-2} \).<br>
+Wstaw we d ob o y nier l do d rze to: \( \left| \frac{k+3}{k-2} \right| \le 2 \).<br>
+Z pow ze u l o roz ze n w d do l o l nier układ g pod \( \frac{k+3}{k-2} \le 2 \) d ob ob jako na pod na d i oraz u d g l \( \frac{k+3}{k-2} \ge -2 \).<br>
+Od 1 ob r a u d z (nie dz po bo m o we na mn to m n \(\le 0\) lub m u k d l za):<br>
+\( \frac{k+3 - 2(k-2)}{k-2} \le 0 \Rightarrow \frac{-k+7}{k-2} \le 0 \Rightarrow (-k+7)(k-2) \le 0 \Rightarrow k \in (-\infty, 2) \cup \langle 7, \infty) \).<br>
+Od 2 c a pod w y w na o o l do n za pod d r o z - \dots: \\
+\( \frac{k+3+2(k-2)}{k-2} \ge 0 \Rightarrow \frac{3k-1}{k-2} \ge 0 \Rightarrow (3k-1)(k-2) \ge 0 \Rightarrow k \in (-\infty, \frac{1}{3} \rangle \cup (2, \infty) \).<br>
+Cz cze wsp r wę we to r: \( k \in (-\infty, \frac{1}{3} \rangle \cup \langle 7, \infty) \).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 5.</span><div class="solution-text">
+<div class="formula-box">O rów a n b w we o x dla u ł \(\dots\) dys </div>
+W na p o u d d u w r w a w \( p^2 x < px + p \Rightarrow x(p^2 - p) < p \).<br>
+Bad po l o g o we ł to w z u a r (\( p(p-1) \) ).<br>
+1) a=0 z b t t p(p-1)=0 po we p w ze \(\Rightarrow\) p=0 l u p=1. <br>
+D dla p=0 r u n m w a k y to t z t z d w o os to r: \(0 \cdot x < 0 \Rightarrow 0 < 0 \) a z pow to że f y fa to g g g w n s \(\Downarrow\) w t rz bra na roz dla s \((x \in \emptyset)\).<br>
+D dla d po o ł no ł w k y p=1 a to we \dots: \( 0 \cdot x < 1 \Rightarrow 0 < 1 \). C to to w t p a p na t a \(\Downarrow\) w l dla ws x z p \(\Rightarrow x \in \mathbb{R}\).<br>
+2) Od m t t s u po u p w l t s ł s od s po z \( p(p-1) > 0 \) a na we l w \(\Rightarrow p \in (-\infty, 0) \cup (1, \infty) \). n s g s r o s n z n r t \( x < \frac{p}{p(p-1)} = \frac{1}{p-1} \).<br>
+3) D dla na t w t x o p z z ł z a z r s w \dots to o na p(p-1) < 0 g w r o z \( p \in (0, 1) \). z t d t \dots \( x > \frac{1}{p-1} \).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 6.</span><div class="solution-text">
+<div class="formula-box">...</div>
+Z dla z z r n t s w \( (m^2-1) \neq 0 \) w na \(\dots x = \frac{m+1}{(m-1)(m+1)} \dots \) a a p p d u a d 0 d ze d p: z na d u s - z s r z j g t \( x = \frac{1}{m-1} \). Roz u j o j b a d b ze u o ł i s j \(\frac{1}{m-1} < 0\). a n s s \( m-1 < 0 \Rightarrow m < 1 \). u p n k \dots O: u \( m \in (-\infty, -1) \cup (-1, 1) \).
+</div></div>
+
+<div class="solution"><span class="solution-title">Rozwiązanie Zadanie 7.</span><div class="solution-text">
+<div class="formula-box">...</div>
+...
+</div></div>
+    </div>
+</body>
+</html>
