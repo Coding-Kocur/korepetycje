@@ -778,6 +778,31 @@
         .contact-item:hover {
             color: var(--primary-light);
         }
+
+        .google-maps-icon {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+        .google-maps-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(66, 133, 244, 0.1);
+            border: 1px solid rgba(66, 133, 244, 0.3);
+            color: #4285f4;
+            padding: 0.45rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .google-maps-link:hover {
+            background: rgba(66, 133, 244, 0.2);
+            border-color: rgba(66, 133, 244, 0.5);
+        }
     </style>
 </head>
 
@@ -889,6 +914,10 @@
             <div class="location-tags">
                 <span class="location-tag">💻 Cała Polska (Online)</span>
                 <span class="location-tag">📍 Łódź – Polesie (Stacjonarnie)</span>
+                <a href="https://maps.google.com/?q=Łódź+Polesie" class="location-tag google-maps-link" target="_blank">
+                    <img src="https://v.wpimg.pl/Y2NiNmY2dlMvCzhedkl7RmxTbAQwEHUQO0t0T3ZRdgF5XDZCP1s1VzwMPgJ3VStHPgg5HXdCNR0vGSdCLwN2VicaPgE4S3ZXIwsrCXZROgR_WX5dYR9tBi8PY1k_VzgfL1ArWHQDOAN4DC0OOwQ_BCtLMw" alt="Mapy Google" class="google-maps-icon">
+                    Zobacz na mapie
+                </a>
             </div>
             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 1rem;">
                 Przy zajęciach stacjonarnych istnieje możliwość dojazdu do ucznia w obrębie wymienionych rejonów.
